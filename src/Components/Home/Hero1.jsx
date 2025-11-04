@@ -33,7 +33,7 @@ const HeroSection = () => {
             <img src={User3} alt="user" className="w-8 h-8 rounded-full border-2 border-white" />
           </div>
           <p className="text-sm md:text-base text-gray-800">
-            Trusted By <span className="font-semibold">3,00,000 +</span> people
+            Trusted By <span className="font-semibold">4,00,000 +</span> people
           </p>
         </div>
 

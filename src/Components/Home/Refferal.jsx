@@ -6,8 +6,23 @@ const ReferralSection = () => {
   return (
     <section className="bg-white py-10 px-6 md:px-24 font-sans">
       <div className="grid md:grid-cols-2 items-center gap-12 md:gap-16">
-        {/* Left Content */}
-        <div className="text-center md:text-left">
+        
+        {/* Right Mockups (show on top for mobile) */}
+        <div className="flex flex-col sm:flex-row justify-center md:justify-end items-center sm:gap-16 order-1 md:order-2">
+          <img
+            src={SignupMockup}
+            alt="Signup Screen"
+            className="w-40 sm:w-44 md:w-48 object-contain mb-6 sm:mb-0"
+          />
+          <img
+            src={LoginMockup}
+            alt="Login Screen"
+            className="w-40 sm:w-44 md:w-48 object-contain sm:mt-16 md:mt-52"
+          />
+        </div>
+
+        {/* Left Content (below on mobile) */}
+        <div className="text-center md:text-left order-2 md:order-1">
           <h2 className="text-base sm:text-lg md:text-2xl font-semibold text-black mb-6 leading-snug">
             Referral Code Access – Enter a valid referral code to unlock your Pixla account.
           </h2>
@@ -34,19 +49,6 @@ const ReferralSection = () => {
           </ol>
         </div>
 
-        {/* Right Mockups */}
-        <div className="flex flex-col sm:flex-row justify-center md:justify-end items-center sm:gap-16">
-          <img
-            src={SignupMockup}
-            alt="Signup Screen"
-            className="w-40 sm:w-44 md:w-48 object-contain mb-6 sm:mb-0"
-          />
-          <img
-            src={LoginMockup}
-            alt="Login Screen"
-            className="w-40 sm:w-44 md:w-48 object-contain sm:mt-16 md:mt-52"
-          />
-        </div>
       </div>
     </section>
   );

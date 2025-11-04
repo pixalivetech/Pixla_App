@@ -6,8 +6,25 @@ const BrandsTabSection = () => {
   return (
     <section className="bg-white py-14 px-6 md:px-24 font-sans">
       <div className="grid md:grid-cols-2 items-start gap-10 md:gap-20">
-        {/* Left Side Content */}
-        <div className="text-center md:text-left">
+        
+        {/* Right Side: Phone Mockup with Mandala (on top for mobile) */}
+        <div className="relative flex justify-center md:justify-end order-1 md:order-2">
+          {/* Mandala Background */}
+          <img
+            src={Playmandala}
+            alt="Mandala Background"
+            className="absolute w-62 sm:w-70 md:w-[420px] opacity-25 top-30 right-32 transform translate-x-1/2 -translate-y-1/2 filter brightness-0 invert-[70%] sepia-[100%] hue-rotate-[10deg] saturate-[500%]"
+          />
+          {/* Phone Mockup */}
+          <img
+            src={BrandsMockup}
+            alt="Pixla Brands Tab"
+            className="w-40 sm:w-52 md:w-64 object-contain relative z-10"
+          />
+        </div>
+
+        {/* Left Side Content (below on mobile) */}
+        <div className="text-center md:text-left order-2 md:order-1">
           {/* How It Works */}
           <div className="mb-10">
             <h3 className="text-lg sm:text-xl md:text-2xl font-semibold text-black mb-4">
@@ -51,21 +68,6 @@ const BrandsTabSection = () => {
           </div>
         </div>
 
-        {/* Right Side: Phone Mockup with Mandala */}
-        <div className="relative flex justify-center md:justify-end">
-          {/* Mandala Background */}
-          <img
-            src={Playmandala}
-            alt="Mandala Background"
-            className="absolute w-72 sm:w-80 md:w-[460px] opacity-25 top-30 right-32 transform translate-x-1/2 -translate-y-1/2 filter brightness-0 invert-[70%] sepia-[100%] hue-rotate-[10deg] saturate-[500%]"
-          />
-          {/* Phone Mockup */}
-          <img
-            src={BrandsMockup}
-            alt="Pixla Brands Tab"
-            className="w-40 sm:w-52 md:w-64 object-contain relative z-10"
-          />
-        </div>
       </div>
     </section>
   );

@@ -35,7 +35,7 @@ const AppFeatures = () => {
             </h3>
                      {/* Tagline */}
           <p className="text-yellow-500 text-sm sm:text-base md:text-lg font-semibold mt-2">
-            Welcome to the new era of community - <br />  powered by Pixla.
+            Welcome to the new era of community <br />  powered by Pixla.
           </p>
           </div>
           <div>

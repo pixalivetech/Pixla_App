@@ -12,7 +12,7 @@ const PlaysTabSection = () => {
           <img
             src={Playmandala}
             alt="Mandala Background"
-            className="absolute w-72 sm:w-80 md:w-[460px] opacity-20 top-30 left-30 transform -translate-x-1/2 -translate-y-1/2 filter brightness-0 invert-[70%] sepia-[100%] hue-rotate-[10deg] saturate-[500%]"
+            className="absolute w-62 sm:w-70 md:w-[420px] opacity-20 top-30 left-30 transform -translate-x-1/2 -translate-y-1/2 filter brightness-0 invert-[70%] sepia-[100%] hue-rotate-[10deg] saturate-[500%]"
           />
           {/* Phone Mockup */}
           <img

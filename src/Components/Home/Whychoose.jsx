@@ -9,7 +9,7 @@ import TreeIcon from "./../../assets/Home/tree.png";
 
 const WhyChoosePixla = () => {
   return (
-    <section id="why-pixla" className="bg-white py-20 px-6 md:px-24 font-sans">
+    <section id="why-pixla" className="bg-white py-12 px-6 md:px-24 font-sans">
       {/* Heading */}
       <h2 className="text-3xl md:text-5xl font-semibold text-black text-left mb-16">
         Why Choose Pixla?

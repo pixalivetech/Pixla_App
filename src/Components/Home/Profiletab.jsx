@@ -4,7 +4,7 @@ import ProfileMockup from "./../../assets/Home/profiletab.png"; // phone mockup 
 
 const ProfileTabSection = () => {
   return (
-    <section className="bg-white py-20 px-6 md:px-24 font-sans text-black">
+    <section className="bg-white py-16 px-6 md:px-24 font-sans text-black">
       {/* Top Section */}
       <div className="grid md:grid-cols-2 gap-8 items-start mb-12">
         <div>

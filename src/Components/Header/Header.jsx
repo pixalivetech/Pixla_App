@@ -5,7 +5,7 @@ import Logo from "./../../assets/logo1.jpg";
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
-  // Smooth scroll function
+  // Smooth scroll function (for same-page navigation)
   const handleScroll = (id) => {
     const section = document.getElementById(id);
     if (section) {
@@ -26,13 +26,12 @@ const Header = () => {
             src={Logo}
             alt="Pixla Logo"
             className="w-12 h-auto object-contain cursor-pointer"
-            onClick={() => handleScroll("/")}
+            onClick={() => (window.location.href = "/")}
           />
         </div>
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex space-x-10 text-md font-medium text-black">
-          {/* Home uses <a> tag */}
           <a
             href="/"
             onClick={() => handleScroll("home")}
@@ -41,7 +40,6 @@ const Header = () => {
             Home
           </a>
 
-          {/* Other sections use buttons */}
           {[
             { id: "about", label: "About Us" },
             { id: "why-pixla", label: "Why Pixla" },
@@ -58,10 +56,10 @@ const Header = () => {
           ))}
         </nav>
 
-        {/* CTA Button */}
+        {/* Desktop CTA Button */}
         <div className="hidden md:block">
           <button
-            onClick={() => handleScroll("faq")}
+            onClick={() => (window.location.href = "/contact")}
             className="bg-yellow-500 text-black font-semibold px-5 py-2 rounded-full hover:bg-[#e6c200] transition-all"
           >
             Let’s Talk
@@ -82,7 +80,6 @@ const Header = () => {
       {/* Mobile Menu */}
       {menuOpen && (
         <div className="md:hidden bg-white shadow-lg rounded-b-2xl mx-4 mt-2 py-4 flex flex-col items-center space-y-4 text-black font-medium">
-          {/* Home as anchor tag */}
           <a
             href="/"
             onClick={() => handleScroll("home")}
@@ -91,7 +88,6 @@ const Header = () => {
             Home
           </a>
 
-          {/* Other links as buttons */}
           {[
             { id: "about", label: "About Us" },
             { id: "why-pixla", label: "Why Pixla" },
@@ -107,8 +103,9 @@ const Header = () => {
             </button>
           ))}
 
+          {/* Mobile CTA Button */}
           <button
-            onClick={() => handleScroll("contact")}
+            onClick={() => (window.location.href = "/contact")}
             className="bg-yellow-500 text-black font-semibold px-5 py-2 rounded-full hover:bg-[#e6c200] transition-all"
           >
             Let’s Talk
