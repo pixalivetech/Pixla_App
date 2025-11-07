@@ -1,9 +1,21 @@
 import React from "react";
-import { FiLinkedin, FiTwitter, FiInstagram } from "react-icons/fi";
+import { Link, useNavigate } from "react-router-dom";
+import { FiLinkedin, FiInstagram } from "react-icons/fi";
 
 const Footer = () => {
+  const navigate = useNavigate();
+
+  // Function to navigate and scroll to top
+  const handleLinkClick = (path) => {
+    navigate(path);
+    window.scrollTo({ top: 0, behavior: "smooth" }); // 👈 scroll to top
+  };
+
   return (
-    <footer id="footer" className="bg-black text-white px-6 md:px-24 py-12 font-sans">
+    <footer
+      id="footer"
+      className="bg-black text-white px-6 md:px-24 py-12 font-sans"
+    >
       {/* Top Grid Section */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-16 border-b border-gray-700 pb-10">
         {/* Left Section */}
@@ -21,19 +33,28 @@ const Footer = () => {
           <h3 className="text-xl md:text-2xl mb-4 font-medium">Quick Links</h3>
           <ul className="space-y-2 md:space-y-3 text-sm md:text-base text-gray-300">
             <li>
-              <a href="/privacy" className="hover:text-white transition">
+              <button
+                onClick={() => handleLinkClick("/privacy")}
+                className="hover:text-white transition bg-transparent border-none outline-none cursor-pointer"
+              >
                 Privacy Policy
-              </a>
+              </button>
             </li>
             <li>
-              <a href="/terms" className="hover:text-white transition">
+              <button
+                onClick={() => handleLinkClick("/terms")}
+                className="hover:text-white transition bg-transparent border-none outline-none cursor-pointer"
+              >
                 Terms & Conditions
-              </a>
+              </button>
             </li>
             <li>
-              <a href="/refund" className="hover:text-white transition">
+              <button
+                onClick={() => handleLinkClick("/refund")}
+                className="hover:text-white transition bg-transparent border-none outline-none cursor-pointer"
+              >
                 Refund Policy
-              </a>
+              </button>
             </li>
           </ul>
         </div>
@@ -73,11 +94,21 @@ const Footer = () => {
           </div>
 
           {/* Social Icons Right */}
-          <div className="flex justify-center md:justify-end space-x-5 text-gray-400">
-            <a href="https://www.linkedin.com/company/pixla-gold-network" className="hover:text-white transition">
+          <div className="flex justify-center md:justify-end space-x-5 text-gray-400 mt-6">
+            <a
+              href="https://www.linkedin.com/company/pixla-gold-network"
+              className="hover:text-white transition"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FiLinkedin size={20} />
             </a>
-            <a href="https://www.instagram.com/pixla_group/" className="hover:text-white transition">
+            <a
+              href="https://www.instagram.com/pixla_group/"
+              className="hover:text-white transition"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FiInstagram size={20} />
             </a>
           </div>

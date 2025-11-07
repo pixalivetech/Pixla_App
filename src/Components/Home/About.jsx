@@ -16,8 +16,8 @@ const AboutSection = () => {
         <div className="text-gray-700 leading-relaxed">
           <p className="text-base md:text-lg mb-6">
             Pixla is India’s first financial improvement app that lets users
-            earn digital gold for every swipe. Developed by Tripalive.Me
-            Technology Pvt Ltd, Pixla brings together entertainment, social
+            earn digital gold for every swipe. Developed by <b> Tripalive.Me
+            Technology Pvt Ltd,</b> Pixla brings together entertainment, social
             engagement, and wealth creation — all in one platform.
           </p>
 

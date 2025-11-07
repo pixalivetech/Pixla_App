@@ -65,7 +65,7 @@ const HeroSection = () => {
           <img
             src={Mandala}
             alt="Mandala Background"
-             className="absolute w-[28rem] md:w-[600rem]  opacity-40 animate-spin-slow drop-shadow-[0_0_60px_rgba(255,215,0,0.4)]"
+             className="absolute mb-10 md:mb-12 w-[12rem] md:w-[600rem]  opacity-40 animate-spin-slow drop-shadow-[0_0_60px_rgba(255,215,0,0.4)]"
           />
 
           {/* Phone Image */}
