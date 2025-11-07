@@ -34,7 +34,7 @@ const Home = () => {
       <Secured/>
       <FAQ/>
       <Review/>
-      <Blank/> 
+      {/* <Blank/>  */}
     </div>
   )
 }
