@@ -27,7 +27,9 @@ const WhyChoosePixla = () => {
             />
             <h3 className="text-lg font-semibold">Earn While You Swipe</h3>
             <p className="text-gray-600 text-sm">
-              Get Gold Dots for every post and swipe.
+              
+Every swipe, post, and engagement rewards you with Gold Dots, your gateway to real wealth.
+
             </p>
           </div>
 
@@ -39,7 +41,7 @@ const WhyChoosePixla = () => {
             />
             <h3 className="text-lg font-semibold">Shop & Redeem</h3>
             <p className="text-gray-600 text-sm">
-              Use Gold Dots to buy FMCG & lifestyle products via Pixla Brands.
+          Redeem your Gold Dots for pure digital gold or exclusive Pixla Jewellery — simple, transparent, and valuable
             </p>
           </div>
 
@@ -51,7 +53,9 @@ const WhyChoosePixla = () => {
             />
             <h3 className="text-lg font-semibold">Referral Income</h3>
             <p className="text-gray-600 text-sm">
-              Earn commission from every referral who joins with your code.
+              
+Earn lifetime commission whenever your referrals join and stay active using your code.
+
             </p>
           </div>
         </div>
@@ -75,7 +79,9 @@ const WhyChoosePixla = () => {
             />
             <h3 className="text-lg font-semibold">Pixla Gold Subscription</h3>
             <p className="text-gray-600 text-sm">
-              Earn 10× more rewards & enjoy ad-free browsing.
+          
+Unlock 10× rewards, premium features, and ad-free browsing with Pixla Gold.
+
             </p>
           </div>
 
@@ -87,7 +93,8 @@ const WhyChoosePixla = () => {
             />
             <h3 className="text-lg font-semibold">Digital Gold Savings</h3>
             <p className="text-gray-600 text-sm">
-              Save, buy, or redeem gold securely via MMTC-PAMP.
+       Buy, save, or redeem gold securely through MMTC-PAMP, India’s most trusted gold refinery.
+
             </p>
           </div>
 
@@ -99,7 +106,7 @@ const WhyChoosePixla = () => {
             />
             <h3 className="text-lg font-semibold">Tree for Every Subscriber</h3>
             <p className="text-gray-600 text-sm">
-              1 tree planted under Pixla Green Mission.
+         For every Gold Subscription, 1 tree is planted under the Pixla Green Mission — grow your wealth and help the planet.
             </p>
           </div>
         </div>

@@ -20,9 +20,8 @@ const MissionVisionSection = () => {
               Mission
             </h3>
             <p className="text-base md:text-lg leading-relaxed mb-4">
-              To empower every Indian to build wealth through digital engagement — 
-              turning every swipe, share, and purchase into real financial growth 
-              backed by gold.
+             To make every Indian’s phone a doorway to wealth — turning daily app usage into gold and jewellery savings that uplift families and secure futures.
+
             </p>
             <hr className="border-gray-700" />
           </div>
@@ -33,9 +32,8 @@ const MissionVisionSection = () => {
               Vision
             </h3>
             <p className="text-base md:text-lg leading-relaxed">
-              To become India’s most trusted digital wealth and media ecosystem — 
-              where entertainment, shopping, and savings come together for a 
-              financially stronger nation.
+             To become Bharat’s most trusted digital gold platform, uniting entertainment and earnings so that every household can build wealth with dignity, simplicity, and confidence.
+
             </p>
           </div>
         </div>
@@ -44,7 +42,8 @@ const MissionVisionSection = () => {
       {/* Footer Line */}
       <div className="max-w-7xl mx-auto mb-2 mt-8 md:mb-15">
         <p className="text-xl text-gray-500">
-          Powered by <span className="font-medium text-gray-700">Pixla Group</span> — Innovating India’s Digital Future.
+          Powered by <span className="font-medium text-gray-700">Pixla Group</span> — Gold for Every Home. Growth for Every Indian.
+
         </p>
       </div>
     </section>

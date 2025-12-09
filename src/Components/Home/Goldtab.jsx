@@ -1,13 +1,7 @@
-import React, { useState } from "react";
-import GoldMockup from "./../../assets/Home/goldtab.png"; // your phone mockup image
+import React from "react";
+import GoldMockup from "./../../assets/Home/goldtab.png";
 
 const PixlaGoldTabSection = () => {
-  const [openIndex, setOpenIndex] = useState(null);
-
-  const toggleAccordion = (index) => {
-    setOpenIndex(openIndex === index ? null : index);
-  };
-
   const items = [
     {
       title: "Earn & Save",
@@ -45,6 +39,7 @@ const PixlaGoldTabSection = () => {
           <h2 className="text-xl md:text-3xl font-semibold text-black mb-2">
             Pixla Gold
           </h2>
+
           {/* Tagline below heading */}
           <p className="text-yellow-500 text-sm sm:text-base md:text-lg font-semibold mb-4">
             Turn Every Gram into Growth — <br /> Wealth for You, Life for Earth.
@@ -58,28 +53,19 @@ const PixlaGoldTabSection = () => {
         </p>
       </div>
 
-      {/* Bottom Section: Accordion + Image */}
+      {/* Bottom Section: Points + Image */}
       <div className="grid md:grid-cols-2 items-start gap-16">
-        {/* Left - Accordion */}
-        <div className="space-y-4">
+        
+        {/* Left - Points */}
+        <div className="space-y-5">
           {items.map((item, index) => (
-            <div key={index} className="border-b border-gray-200 pb-3">
-              <button
-                onClick={() => toggleAccordion(index)}
-                className="w-full flex justify-between items-center text-left"
-              >
-                <span className="font-medium text-black text-sm md:text-base">
-                  {item.title}
-                </span>
-                <span className="text-gray-500">
-                  {openIndex === index ? "−" : "+"}
-                </span>
-              </button>
-              {openIndex === index && (
-                <p className="text-gray-600 text-sm md:text-base mt-2 leading-relaxed">
-                  {item.content}
-                </p>
-              )}
+            <div key={index} className=" p-4 ">
+              <h4 className="font-semibold text-black text-base md:text-lg mb-1">
+                {item.title}
+              </h4>
+              <p className="text-gray-600 text-sm md:text-base leading-relaxed">
+                {item.content}
+              </p>
             </div>
           ))}
         </div>
@@ -89,7 +75,7 @@ const PixlaGoldTabSection = () => {
           <img
             src={GoldMockup}
             alt="Pixla Gold Tab"
-            className="w-36 md:w-44 object-contain"
+            className=" object-cover"
           />
         </div>
       </div>

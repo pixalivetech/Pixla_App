@@ -22,7 +22,7 @@ const Footer = () => {
         <div className="text-center md:text-left">
           <h2 className="text-5xl md:text-6xl font-semibold mb-4">Pixla</h2>
           <p className="text-sm md:text-md text-gray-400 leading-relaxed max-w-md mx-auto md:mx-0">
-            Pixla Gold – Empowering India to Save, Earn, and Grow with Gold.
+            Pixla  – Empowering India to Save, Earn, and Grow with Gold.
             Simple, secure, and rewarding – invest digitally, redeem physically,
             and grow sustainably.
           </p>
@@ -104,7 +104,7 @@ const Footer = () => {
               <FiLinkedin size={20} />
             </a>
             <a
-              href="https://www.instagram.com/pixla_group/"
+              href="https://www.instagram.com/pixla_official/"
               className="hover:text-white transition"
               target="_blank"
               rel="noopener noreferrer"

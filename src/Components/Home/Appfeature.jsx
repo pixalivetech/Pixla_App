@@ -19,11 +19,10 @@ const AppFeatures = () => {
           </div>
           <div>
             <p className="text-gray-600 text-sm md:text-xl leading-relaxed">
-              Pixla combines entertainment, shopping, and wealth-building into
-              one powerful ecosystem. Every swipe, share, and purchase you make
-              adds real value — in the form of Gold Dots, rewards, and
-              opportunities.
-            </p>
+         Pixla blends entertainment, engagement, and gold-backed wealth-building into one seamless platform.
+Every swipe, share, and purchase turns into real value through Gold Dots, rewards, and smart savings.<br /> <br />
+
+Pixla makes your digital life a daily wealth habit, helping every Indian save, earn, and grow effortlessly.          </p>
           </div>
         </div>
 
@@ -40,8 +39,7 @@ const AppFeatures = () => {
           </div>
           <div>
             <p className="text-gray-600 text-sm md:text-xl leading-relaxed">
-              Pixla is an invite-only app — every new user must enter a Referral
-              Code to join our premium community.
+             Pixla is an invite-only app, where every new user must enter a Referral Code to join our premium ecosystem
             </p>
           </div>
         </div>

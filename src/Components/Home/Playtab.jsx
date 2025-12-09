@@ -4,7 +4,7 @@ import Playmandala from "./../../assets/Home/mandala.png";
 
 const PlaysTabSection = () => {
   return (
-    <section className="bg-white py-14 px-6 md:px-24 font-sans">
+    <section className="bg-white py-10 px-6 md:px-24  font-sans">
       <div className="grid md:grid-cols-2 items-center gap-10 md:gap-20">
         {/* Left: Phone with Mandala Background */}
         <div className="relative flex justify-center md:justify-start">
@@ -39,18 +39,21 @@ const PlaysTabSection = () => {
 
           <ol className="list-decimal list-inside text-gray-700 space-y-3 text-sm sm:text-base md:text-lg leading-relaxed mb-6">
             <li>
-              <strong>Earn while you scroll</strong> — the more you engage, the more Gold Dots you collect.
+              <strong>Earn while you scroll</strong> — The more you swipe and watch, the more Gold Dots you earn.
+
             </li>
             <li>
-              <strong>Discover</strong> trending creators, influencers, and brands.
+              <strong>Discover</strong> Explore trending creators and engaging content.
+
             </li>
             <li>
-              <strong>Build your digital wealth</strong> just by enjoying short videos.
+              <strong>Build your digital wealth</strong> Turn everyday entertainment into digital gold savings, redeemable as pure gold or Pixla Jewellery.
+
             </li>
           </ol>
 
           <p className="text-black font-medium text-sm sm:text-base md:text-lg">
-            Every swipe is rewarding — literally!
+         On Pixla, every swipe builds your wealth — literally.
           </p>
         </div>
       </div>

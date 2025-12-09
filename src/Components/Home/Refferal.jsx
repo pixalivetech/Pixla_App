@@ -30,21 +30,26 @@ const ReferralSection = () => {
           <ol className="list-decimal list-inside text-gray-700 space-y-3 text-sm sm:text-base leading-relaxed">
             <li>
               <strong>Referral Code Access</strong> – Enter a valid referral code to unlock your Pixla account.
+
             </li>
             <li>
-              <strong>Referral Rewards</strong> – Earn a share from your network’s subscriptions, product purchases, and digital gold savings.
+              <strong>Referral Rewards</strong> – Earn a share from your network’s subscriptions, jewellery redemptions, and digital gold savings.
+
             </li>
             <li>
-              <strong>Welcome Bonus</strong> – New users get free Gold Dots when joining through a referral.
+              <strong>Welcome Bonus</strong> – Get free Gold Dots when you join through a referral.
+
             </li>
             <li>
-              <strong>Priority Access</strong> – Enjoy early access to offers, updates, and new features.
+              <strong>Priority Access</strong> –  Enjoy early access to new offers, updates, and premium features.
+
             </li>
             <li>
-              <strong>Community Growth</strong> – The more users you invite, the higher your earnings and rewards.
+              <strong>Community Growth</strong> – Invite more users to increase your earnings and rewards.
+
             </li>
             <li>
-              <strong>Exclusive Ecosystem</strong> – Only verified referral users can join Pixla, ensuring trust and quality.
+              <strong>Exclusive Ecosystem</strong> –  Only verified referral users can join, ensuring trust and high-quality members.
             </li>
           </ol>
         </div>
