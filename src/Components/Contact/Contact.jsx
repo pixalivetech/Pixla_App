@@ -10,19 +10,19 @@ const Contact = () => {
     try {
       // 1️⃣ Send to Admin
       await emailjs.sendForm(
-        "service_0cp6x3q",    // service ID
-        "template_ckgxssb",   // admin template ID
+        "service_lnjword",    // service ID
+        "template_2gbypv7",   // admin template ID
         form.current,
-        "rJ1Wh7Z8mtYIaH7vc"   // public key
+        "mOjbSAlY25mRszit8"   // public key
       );
       console.log("✅ Sent to Admin");
 
       // 2️⃣ Send auto-reply to User
       await emailjs.sendForm(
-        "service_0cp6x3q",
-        "template_s5k2746",
+        "service_lnjword",
+        "template_g0l4sk8",
         form.current,
-        "rJ1Wh7Z8mtYIaH7vc"
+        "mOjbSAlY25mRszit8"
       );
 
       alert("✅ Message sent! Please check your email for confirmation.");
