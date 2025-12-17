@@ -1,5 +1,7 @@
 import React from "react";
-import GoldMockup from "./../../assets/Home/goldtab.png";
+import GoldMockup from "./../../assets/Home/brand.png";
+import BrandsMockup from "./../../assets/Home/brand.png";
+import Playmandala from "./../../assets/Home/mandala.png";
 
 const PixlaGoldTabSection = () => {
   const items = [
@@ -70,14 +72,18 @@ const PixlaGoldTabSection = () => {
           ))}
         </div>
 
-        {/* Right - Phone Mockup */}
-        <div className="flex justify-center md:justify-center">
-          <img
-            src={GoldMockup}
-            alt="Pixla Gold Tab"
-            className=" object-cover"
-          />
-        </div>
+         <div className="relative flex justify-center md:justify-end order-1 md:order-2">
+                 <img
+                   src={Playmandala}
+                   alt="Mandala Background"
+                   className="absolute w-62 sm:w-70 md:w-[420px] opacity-25 top-30 right-32 transform translate-x-1/2 -translate-y-1/2 filter brightness-0 invert-[70%] sepia-[100%] hue-rotate-[10deg] saturate-[500%]"
+                 />
+                 <img
+                   src={BrandsMockup}
+                   alt="Pixla Brands Tab"
+                   className="w-40 sm:w-52 md:w-64 object-contain relative z-10"
+                 />
+               </div>
       </div>
     </section>
   );

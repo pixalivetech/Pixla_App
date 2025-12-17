@@ -1,5 +1,5 @@
 import React from "react";
-import BrandsMockup from "./../../assets/Home/brandsmockup.png";
+import BrandsMockup from "./../../assets/Home/jewel.png";
 import Playmandala from "./../../assets/Home/mandala.png";
 
 const BrandsTabSection = () => {
