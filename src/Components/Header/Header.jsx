@@ -81,7 +81,9 @@ const Header = () => {
             onClick={() => handleScroll("faq")}
             className="bg-yellow-500 text-black font-semibold px-5 py-2 rounded-full hover:bg-[#e6c200] transition-all"
           >
-            Let’s Talk
+            <a href="/contact" >
+              Let’s Talk
+          </a>
           </button>
         </div>
 

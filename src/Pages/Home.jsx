@@ -14,7 +14,7 @@ import Profile from "./../Components/Home/Profiletab"
 import Secured from "./../Components/Home/Securedby"
 import FAQ from "./../Components/Home/FAQ"
 import Review from "./../Components/Home/Review"
-import Blank from "./../Components/Home/Blank"
+
 
 const Home = () => {
   return (
@@ -34,6 +34,7 @@ const Home = () => {
       <Secured/>
       <FAQ/>
       <Review/>
+     
       {/* <Blank/>  */}
     </div>
   )
