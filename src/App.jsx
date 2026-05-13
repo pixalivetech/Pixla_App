@@ -7,6 +7,7 @@ import Privacy from "./Components/Policy/Privacypolicy";
 import Refund from "./Components/Policy/Refundpolicy";
 import Footer from "./Components/Footer/Footer";
 import Contact from "./Components/Contact/Contact"
+import Franchise from "./Components/Home/Franchise";
 
 const App = () => {
   return (
@@ -29,6 +30,7 @@ const App = () => {
             <Route path="/privacy" element={<Privacy />} />
             <Route path="/refund" element={<Refund />} />
             <Route path="/contact" element={<Contact />} />
+             <Route path="/franchise" element={<Franchise />} />
           </Routes>
         </main>
 

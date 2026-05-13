@@ -4,13 +4,17 @@ import Logo from "./../../assets/logo1.jpg";
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
-  const menuRef = useRef(null); // reference for outside click
+  const menuRef = useRef(null);
 
   // Smooth scroll or redirect
   const handleScroll = (id) => {
     const section = document.getElementById(id);
+
     if (section) {
-      section.scrollIntoView({ behavior: "smooth", block: "start" });
+      section.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
       setMenuOpen(false);
     } else {
       window.location.href = "/";
@@ -42,6 +46,7 @@ const Header = () => {
   return (
     <header className="w-full bg-transparent absolute top-0 left-0 z-50">
       <div className="mx-auto flex items-center justify-between px-6 md:px-24 py-12 relative">
+        
         {/* Logo */}
         <div className="flex items-center">
           <img
@@ -57,6 +62,7 @@ const Header = () => {
           <a href="/" className="hover:text-gray-600 transition-colors">
             Home
           </a>
+
           {[
             { id: "about", label: "About Us" },
             { id: "why-pixla", label: "Why Pixla" },
@@ -70,21 +76,30 @@ const Header = () => {
               {item.label}
             </button>
           ))}
-          <a href="/contact" className="hover:text-gray-600 transition-colors">
+
+          {/* Franchise Tab */}
+          <a
+            href="/franchise"
+            className="hover:text-gray-600 transition-colors"
+          >
+            Franchise
+          </a>
+
+          <a
+            href="/contact"
+            className="hover:text-gray-600 transition-colors"
+          >
             Contact Us
           </a>
         </nav>
 
         {/* Desktop CTA */}
         <div className="hidden md:block">
-          <button
-            onClick={() => handleScroll("faq")}
-            className="bg-yellow-500 text-black font-semibold px-5 py-2 rounded-full hover:bg-[#e6c200] transition-all"
-          >
-            <a href="/contact" >
+          <a href="/contact">
+            <button className="bg-yellow-500 text-black font-semibold px-5 py-2 rounded-full hover:bg-[#e6c200] transition-all">
               Let’s Talk
+            </button>
           </a>
-          </button>
         </div>
 
         {/* Mobile Menu Icon */}
@@ -98,7 +113,7 @@ const Header = () => {
         </div>
       </div>
 
-      {/* Animated Compact Mobile Menu */}
+      {/* Mobile Menu */}
       <div
         ref={menuRef}
         className={`md:hidden fixed bottom-40 left-1/2 transform -translate-x-1/2 bg-white shadow-2xl rounded-3xl py-8 px-6 flex flex-col items-center space-y-5 text-black font-medium transition-all duration-500 ease-in-out ${
@@ -107,9 +122,13 @@ const Header = () => {
             : "opacity-0 translate-y-10 pointer-events-none"
         } w-[85%] sm:w-[70%] z-40`}
       >
-        <a href="/" className="hover:text-gray-600 transition-colors">
+        <a
+          href="/"
+          className="hover:text-gray-600 transition-colors"
+        >
           Home
         </a>
+
         {[
           { id: "about", label: "About Us" },
           { id: "why-pixla", label: "Why Pixla" },
@@ -123,15 +142,27 @@ const Header = () => {
             {item.label}
           </button>
         ))}
-        <a href="/contact" className="hover:text-gray-600 transition-colors">
+
+        {/* Franchise Mobile */}
+        <a
+          href="/franchise"
+          className="hover:text-gray-600 transition-colors"
+        >
+          Franchise
+        </a>
+
+        <a
+          href="/contact"
+          className="hover:text-gray-600 transition-colors"
+        >
           Contact Us
         </a>
-        <button
-          onClick={() => handleScroll("faq")}
-          className="bg-yellow-500 text-black font-semibold px-5 py-2 rounded-full hover:bg-[#e6c200] transition-all"
-        >
-          Let’s Talk
-        </button>
+
+        <a href="/contact">
+          <button className="bg-yellow-500 text-black font-semibold px-5 py-2 rounded-full hover:bg-[#e6c200] transition-all">
+            Let’s Talk
+          </button>
+        </a>
       </div>
     </header>
   );
