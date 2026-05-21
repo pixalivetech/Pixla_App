@@ -4,35 +4,40 @@ import { FaApple } from "react-icons/fa";
 
 const reviews = [
   {
-    text: "I love this app! It’s so easy to earn and grow with every swipe on Pixla. Highly recommend it to everyone who wants to build wealth and make an impact.",
-    name: "Murali S.",
+    text: "Pixla Gold Network gives creators a completely new opportunity to earn through engagement, referrals, and community growth. The ecosystem feels innovative and future-ready.",
+    name: "Arjun K.",
   },
+
   {
-    text: "“Pixla Gold made investing simple and purposeful. I started with just ₹10 — now I’m earning rewards every day!”",
-    name: "Priya S.",
+    text: "I really liked the combination of creator engagement and digital gold savings. The jewellery partner ecosystem adds trust and long-term value.",
+    name: "Priya M.",
   },
+
   {
-    text: "“The app is smooth, transparent, and beautifully designed. I love the idea that every gram of gold helps plant a tree.”",
-    name: "Arun V.",
+    text: "The exclusive pincode franchise concept looks powerful. It creates strong opportunities for local business expansion and community building.",
+    name: "Naveen R.",
   },
+
   {
-    text: "“Pixla is not just an app — it’s a movement. I feel proud to be part of India’s first eco-fintech platform.”",
-    name: "Sneha R.",
+    text: "Creators earning Gold Dots through views, likes, comments, shares, and referrals makes Pixla very different from traditional platforms.",
+    name: "Deepika S.",
   },
+
   {
-    text: "“Gold Dots are a game changer! I enjoy swiping, creating content, and earning real value.”",
-    name: "Karthik M.",
+    text: "Pixla Gold Network combines creator economy, social engagement, digital gold, and rewards into one impressive ecosystem.",
+    name: "Santhosh V.",
   },
+
   {
-    text: "“I gifted Pixla Gold to my wife — the subscription benefits are amazing and socially meaningful.”",
-    name: "Divya P.",
+    text: "The jewellery redemption support through trusted partners gives confidence to users who want to build digital gold savings regularly.",
+    name: "Kavitha P.",
   },
+
   {
-    text: "“This is the future of digital savings. Easy, safe, and rewarding.”",
-    name: "Manoj L.",
+    text: "Building wealth through engagement while supporting sustainability initiatives makes Pixla Gold Network stand out from other platforms.",
+    name: "Rahul D.",
   },
 ];
-
 const ReviewSection = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 

@@ -20,8 +20,7 @@ const MissionVisionSection = () => {
               Mission
             </h3>
             <p className="text-base md:text-lg leading-relaxed mb-4">
-             To make every Indian’s phone a doorway to wealth — turning daily app usage into gold and jewellery savings that uplift families and secure futures.
-
+            To create a trusted digital gold ecosystem that helps users save gold, supports creators to grow, empowers local entrepreneurs, and connects communities through social engagement and technology.
             </p>
             <hr className="border-gray-700" />
           </div>
@@ -32,8 +31,7 @@ const MissionVisionSection = () => {
               Vision
             </h3>
             <p className="text-base md:text-lg leading-relaxed">
-             To become Bharat’s most trusted digital gold platform, uniting entertainment and earnings so that every household can build wealth with dignity, simplicity, and confidence.
-
+             To build India’s largest creator-driven social digital gold savings network connecting users, creators, jewellery partners, and franchise entrepreneurs through one powerful and trusted ecosystem.
             </p>
           </div>
         </div>

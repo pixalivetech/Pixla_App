@@ -1,24 +1,43 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Menu, X } from "lucide-react";
+import { Link, useNavigate, useLocation } from "react-router-dom";
 import Logo from "./../../assets/logo1.jpg";
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const menuRef = useRef(null);
 
+  const navigate = useNavigate();
+  const location = useLocation();
+
   // Smooth scroll or redirect
   const handleScroll = (id) => {
-    const section = document.getElementById(id);
+    // If not on home page, navigate first
+    if (location.pathname !== "/") {
+      navigate("/");
 
-    if (section) {
-      section.scrollIntoView({
-        behavior: "smooth",
-        block: "start",
-      });
-      setMenuOpen(false);
+      setTimeout(() => {
+        const section = document.getElementById(id);
+
+        if (section) {
+          section.scrollIntoView({
+            behavior: "smooth",
+            block: "start",
+          });
+        }
+      }, 300);
     } else {
-      window.location.href = "/";
+      const section = document.getElementById(id);
+
+      if (section) {
+        section.scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+        });
+      }
     }
+
+    setMenuOpen(false);
   };
 
   // Close menu on outside click
@@ -59,9 +78,13 @@ const Header = () => {
 
         {/* Desktop Nav */}
         <nav className="hidden md:flex space-x-10 text-md font-medium text-black">
-          <a href="/" className="hover:text-gray-600 transition-colors">
+          
+          <Link
+            to="/"
+            className="hover:text-gray-600 transition-colors"
+          >
             Home
-          </a>
+          </Link>
 
           {[
             { id: "about", label: "About Us" },
@@ -78,28 +101,28 @@ const Header = () => {
           ))}
 
           {/* Franchise Tab */}
-          <a
-            href="/franchise"
+          <Link
+            to="/franchise"
             className="hover:text-gray-600 transition-colors"
           >
             Franchise
-          </a>
+          </Link>
 
-          <a
-            href="/contact"
+          <Link
+            to="/contact"
             className="hover:text-gray-600 transition-colors"
           >
             Contact Us
-          </a>
+          </Link>
         </nav>
 
         {/* Desktop CTA */}
         <div className="hidden md:block">
-          <a href="/contact">
+          <Link to="/contact">
             <button className="bg-yellow-500 text-black font-semibold px-5 py-2 rounded-full hover:bg-[#e6c200] transition-all">
               Let’s Talk
             </button>
-          </a>
+          </Link>
         </div>
 
         {/* Mobile Menu Icon */}
@@ -122,12 +145,14 @@ const Header = () => {
             : "opacity-0 translate-y-10 pointer-events-none"
         } w-[85%] sm:w-[70%] z-40`}
       >
-        <a
-          href="/"
+        
+        <Link
+          to="/"
           className="hover:text-gray-600 transition-colors"
+          onClick={() => setMenuOpen(false)}
         >
           Home
-        </a>
+        </Link>
 
         {[
           { id: "about", label: "About Us" },
@@ -144,25 +169,27 @@ const Header = () => {
         ))}
 
         {/* Franchise Mobile */}
-        <a
-          href="/franchise"
+        <Link
+          to="/franchise"
           className="hover:text-gray-600 transition-colors"
+          onClick={() => setMenuOpen(false)}
         >
           Franchise
-        </a>
+        </Link>
 
-        <a
-          href="/contact"
+        <Link
+          to="/contact"
           className="hover:text-gray-600 transition-colors"
+          onClick={() => setMenuOpen(false)}
         >
           Contact Us
-        </a>
+        </Link>
 
-        <a href="/contact">
+        <Link to="/contact">
           <button className="bg-yellow-500 text-black font-semibold px-5 py-2 rounded-full hover:bg-[#e6c200] transition-all">
             Let’s Talk
           </button>
-        </a>
+        </Link>
       </div>
     </header>
   );

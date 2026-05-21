@@ -15,14 +15,13 @@ const HeroSection = () => {
       {/* Hero Content */}
       <div className="pt-38 md:pt-56 flex flex-col items-center justify-center">
         {/* Heading */}
-        <h1 className="text-4xl md:text-7xl font-semibold text-black mb-4">
-          Turn Every Swipe into Gold
+        <h1 className="text-4xl md:text-6xl font-semibold text-black mb-4">
+         India’s Creator-Powered Digital Gold Network
         </h1>
 
         {/* Subtext */}
         <p className="text-gray-700 max-w-3xl text-sm md:text-lg leading-relaxed mb-6">
-          India’s first app that rewards your social media time with real digital gold.
-          Swipe, earn, and grow your gold every day — because your time has real value.
+          Connecting social engagement, digital gold savings, creators, jewellery partners, and franchise entrepreneurs into one powerful ecosystem.
         </p>
 
         {/* Trusted by section */}

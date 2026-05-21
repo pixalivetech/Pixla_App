@@ -3,81 +3,95 @@ import { Plus, Minus } from "lucide-react";
 
 const faqs = [
   {
-    question: "What is Pixla?",
+    question: "What is Pixla Gold Network?",
     answer:
-      "Pixla is an innovative short video and shopping platform where users can swipe, shop, and earn digital gold. Every action — from watching videos to making purchases — helps you grow your gold savings while contributing to a greener planet.",
+      "Pixla Gold Network is a creator-powered social digital gold savings ecosystem connecting users, creators, jewellery partners, and franchise entrepreneurs through one platform.",
   },
+
   {
-    question: "Who owns Pixla?",
+    question: "How does Pixla Gold Network work?",
     answer:
-      "Pixla is a product of Tripalive.Me Technology Pvt Ltd, headquartered in Bengaluru, India",
+      "Users can save digital gold, engage with creators, participate in referral communities, and access jewellery redemption through trusted partners.",
   },
+
   {
     question: "What are Gold Dots?",
     answer:
-      "Gold Dots are Pixla’s digital rewards. 10,00,000 Gold Dots = 1 gram of 24K Gold, and the value of each Gold Dot changes according to live gold prices.(tracked live in the app).",
+      "Gold Dots are ecosystem rewards earned by creators through engagement, referrals, business growth, and community participation.",
   },
+
   {
-    question: "How can I earn Gold Dots?",
+    question: "How do creators earn on Pixla Gold Network?",
     answer:
-      "You can earn Gold Dots by: Swiping short videos on Pixla Plays, Inviting friends through referral codes, Purchasing products on Pixla Brands, Subscribing to Pixla Gold",
+      "Creators can earn Gold Dots based on views, likes, comments, shares, audience engagement, referrals, and business contributions generated through their content.",
   },
+
   {
-    question: "How can I use my Gold Dots?",
+    question: "Can users buy digital gold on the platform?",
     answer:
-      "Gold Dots can be: Converted to digital gold (stored securely with MMTC-PAMP), Redeemed for 22K jewellery, Used to buy products in the Pixla store, Exchanged or sold anytime through the Gold tab",
+      "Yes. Users can securely buy, save, grow, and redeem digital gold through the Pixla Gold ecosystem.",
   },
+
   {
-    question: "What is Pixla Gold Subscription?",
+    question: "Is jewellery redemption available?",
     answer:
-      "Pixla Gold is an exclusive membership that unlocks 10x rewards, referral income, ad-free experience, and special discounts. Subscription Fee: ₹10,000 / year",
+      "Yes. Users can redeem jewellery benefits through trusted local jewellery partners connected to the Pixla Gold Network.",
   },
+
   {
-    question: "What is the minimum investment amount for Digital Gold?",
-    answer: "You can start investing in digital gold from just ₹10 using the Pixla Gold Tab.",
-  },
-  {
-    question: "How secure is my digital gold?",
+    question: "What is the franchise model?",
     answer:
-      "Your digital gold is vaulted and insured by MMTC-PAMP, one of India’s most trusted gold custodians. You can view purity certificates and live prices anytime.",
+      "Pixla Gold Network offers exclusive pincode-based franchise opportunities to build local communities and expand the ecosystem regionally.",
   },
+
   {
-    question: "How does the referral program work?",
+    question: "Who can become a franchise partner?",
     answer:
-      "When you invite friends using your referral code: You earn Gold Dots for every successful signup. If you are a Pixla Gold subscriber, you also earn a percentage of their subscription, shopping, and gold purchase revenue.",
+      "Entrepreneurs, business owners, creators, and community leaders interested in building local digital gold communities can apply for franchise opportunities.",
   },
+
   {
-    question: "What is Pixla’s Green Promise?",
+    question: "What are the benefits of becoming a franchise partner?",
     answer:
-      "For every order above ₹1000 or every Pixla Gold subscription, a tree is planted under the Pixla Kalam Foundation initiative — connecting your digital actions to real environmental impact.",
+      "Franchise partners receive exclusive pincode rights, onboarding support, referral opportunities, branding support, and ecosystem growth benefits.",
   },
+
   {
-    question: "Can I withdraw my gold anytime?",
+    question: "Is Pixla Gold Network only for creators?",
     answer:
-      "Yes. You can sell, redeem, or exchange your digital gold anytime within the app — with instant value credit or 24-hour jewellery delivery.",
+      "No. The platform is designed for users, creators, jewellery partners, and franchise entrepreneurs.",
   },
+
   {
-    question: "Is Pixla available for everyone?",
+    question: "How does the referral system work?",
     answer:
-      "Pixla is an invite-based platform. You can join using a referral code from an existing user or apply through the website for early access.",
+      "Users and creators can build referral communities, invite new users, and participate in ecosystem growth activities.",
   },
+
   {
-    question: "What if I face a technical or payment issue?",
+    question: "What is the Pixla Green Mission?",
     answer:
-      "Please reach our support team at 📧 info@pixla.in.We respond within 3–5 business days.",
+      "Every gram of gold sold and every subscription contributes towards sustainability initiatives and tree plantation programs.",
   },
+
   {
-    question: "Can I cancel my subscription?",
+    question: "Is the platform secure?",
     answer:
-      "No. Subscriptions are non-refundable and non-cancellable once activated. Please read all details before subscribing.",
+      "Pixla Gold Network focuses on secure transactions, transparent digital gold systems, and trusted ecosystem partnerships.",
   },
+
   {
-    question: "How can I contact Pixla?",
+    question: "What is the purpose of the jewellery partner network?",
     answer:
-      "📍 Tripalive.Me Technology Pvt Ltd Bengaluru, India, 📧 info@pixla.in, www.pixla.in",
+      "The jewellery partner network helps build trust, supports jewellery redemption, and strengthens the online + offline ecosystem experience.",
+  },
+
+  {
+    question: "What is the vision of Pixla Gold Network?",
+    answer:
+      "To build India’s largest creator-driven social digital gold savings network connecting users, creators, jewellery partners, and franchise entrepreneurs through one unified ecosystem.",
   },
 ];
-
 const FAQSection = () => {
   const [openIndex, setOpenIndex] = useState(null);
 

@@ -22,9 +22,8 @@ const Footer = () => {
           <h2 className="text-5xl md:text-6xl font-semibold mb-4">Pixla</h2>
 
           <p className="text-sm md:text-md text-gray-400 leading-relaxed max-w-md mx-auto md:mx-0">
-            Pixla – Empowering India to Save, Earn, and Grow with Gold.
-            Simple, secure, and rewarding – invest digitally, redeem physically,
-            and grow sustainably.
+           
+Pixla Gold Network is a creator-powered social digital gold savings ecosystem connecting users, creators, jewellery partners, and franchise entrepreneurs through one unified platform.
           </p>
         </div>
 
@@ -79,27 +78,18 @@ const Footer = () => {
                 1. Bengaluru (HQ)
               </span>
               <br />
-              Electronic City,
+              2nd Floor, Reliance Smart Bazaar Building, Hosur Rd, opp. E City Bus Stop, Phase II, Electronic City, Konappana Agrahara
               <br />
               Karnataka – 560100
             </li>
 
+           
             <li>
               <span className="font-medium text-white">
-                2. Chennai (Campus)
+                2. Krishnagiri (Campus)
               </span>
               <br />
-              Siruseri,
-              <br />
-              Tamil Nadu – 603103
-            </li>
-
-            <li>
-              <span className="font-medium text-white">
-                3. Krishnagiri (Campus)
-              </span>
-              <br />
-              Periyapanamutlu,
+              st joseph college,(opp)VM Building, Soolamalai,Krishnagiri, Tamil Nadu 635108,
               <br />
               Tamil Nadu – 635001
             </li>

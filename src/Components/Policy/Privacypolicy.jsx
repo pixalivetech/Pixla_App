@@ -1,169 +1,197 @@
 import React from "react";
 
 const PrivacyPolicySection = () => {
+  const sections = [
+    {
+      title: "1. Information We Collect",
+      content: [
+        "Full name",
+        "Mobile number",
+        "Email address",
+        "Profile information",
+        "Device information",
+        "IP address",
+        "Usage activity and engagement data",
+        "Transaction and payment-related details",
+        "Referral and community activity",
+        "Creator engagement metrics",
+      ],
+      extra:
+        "We may also collect information automatically through app usage analytics and system logs.",
+    },
+
+    {
+      title: "2. How We Use Your Information",
+      content: [
+        "Account registration and authentication",
+        "Providing platform services",
+        "Managing digital gold-related activities",
+        "Creator engagement and rewards",
+        "Referral and community features",
+        "Customer support and communication",
+        "Security and fraud prevention",
+        "Platform improvements and analytics",
+        "Notifications, campaigns, and updates",
+        "Legal and compliance requirements",
+      ],
+    },
+
+    {
+      title: "3. Creator & Engagement Data",
+      content: [
+        "Views",
+        "Likes",
+        "Comments",
+        "Shares",
+        "Engagement activity",
+        "Referral participation",
+        "Business growth generated through the platform",
+      ],
+      extra:
+        "Engagement-related activity may be tracked to operate the reward ecosystem effectively.",
+    },
+
+    {
+      title: "4. Sharing of Information",
+      intro:
+        "We do not sell users’ personal information to third parties.",
+      content: [
+        "Payment gateway providers",
+        "Technology service providers",
+        "Jewellery partners",
+        "Franchise support teams",
+        "Legal or regulatory authorities where required",
+      ],
+      extra:
+        "All such sharing will be limited to operational, security, compliance, or service-related purposes.",
+    },
+
+    {
+      title: "5. Data Security",
+      text:
+        "We implement reasonable technical and organizational measures to protect user information from unauthorized access, misuse, loss, or disclosure. However, no digital platform can guarantee absolute security.",
+    },
+
+    {
+      title: "6. User Responsibilities",
+      content: [
+        "Maintaining account confidentiality",
+        "Protecting login credentials",
+        "Ensuring accurate account information",
+        "Using the platform in compliance with applicable laws and platform policies",
+      ],
+    },
+
+    {
+      title: "7. Children’s Privacy",
+      text:
+        "Pixla Gold Network is not intended for children under the age required by applicable local laws. Users should access the platform only if legally permitted in their jurisdiction.",
+    },
+
+    {
+      title: "8. Third-Party Services",
+      text:
+        "Our platform may integrate with third-party services including payment providers, analytics tools, social login systems, or external links. We are not responsible for the privacy practices of third-party services.",
+    },
+
+    {
+      title: "9. Policy Updates",
+      text:
+        "Tripalive.Me Technology Pvt Ltd reserves the right to update or modify this Privacy Policy at any time. Updated policies will be posted within the application or official platforms. Continued use of the platform after updates constitutes acceptance of the revised Privacy Policy.",
+    },
+
+    {
+      title: "10. Contact Us",
+      contact: true,
+    },
+  ];
+
   return (
     <section className="min-h-screen bg-gradient-to-b from-yellow-100 via-white to-yellow-100 pt-52 pb-24 px-6 md:px-24 font-sans text-gray-800">
+
       {/* Header */}
       <div className="text-center mb-14">
-        <h1 className="text-3xl md:text-5xl font-bold text-black mb-4">
+        <h1 className="text-3xl md:text-5xl font-bold text-black mb-6">
           Privacy Policy
         </h1>
-        <br />
-        <p className="text-base md:text-lg text-gray-600 max-w-2xl mx-auto">
-         
-        </p>
-        <p className="text-sm md:text-base text-gray-600 mt-4 max-w-3xl mx-auto">
-          This Privacy Policy explains how <strong>Pixla</strong>, a product of{" "}
-          <strong>Tripalive.Me Technology Pvt Ltd</strong>, headquartered in
-          Electronic City, Bengaluru, India, collects, uses, and protects your
-          personal information when you use our website, mobile app, or related
-          services. By accessing or using Pixla, you agree to this Privacy
-          Policy.
+
+        <p className="text-sm md:text-base text-gray-600 max-w-4xl mx-auto leading-relaxed">
+          Tripalive.Me Technology Pvt Ltd (“Pixla Gold Network”, “Pixla”,
+          “we”, “our”, or “us”) respects your privacy and is committed
+          to protecting the personal information of users who access and
+          use our mobile application, website, and related services.
+          <br /><br />
+          This Privacy Policy explains how we collect, use, store,
+          and protect your information when you use Pixla Gold Network.
         </p>
       </div>
 
       {/* Sections */}
-      <div className="space-y-8 max-w-4xl mx-auto">
-        {[
-          {
-            title: "1. Information We Collect",
-            content: (
-              <>
-                <p>
-                  We may collect the following types of information:
-                </p>
-                <ul className="list-disc list-inside mt-3 space-y-2 text-gray-700">
-                  <li>
-                    <strong>Personal Information:</strong> Name, phone number,
-                    email, gender, date of birth, and KYC documents (when
-                    required).
-                  </li>
-                  <li>
-                    <strong>Device & Usage Data:</strong> IP address, device
-                    type, app activity, and log information.
-                  </li>
-                  <li>
-                    <strong>Financial Information:</strong> Payment details,
-                    transaction history, digital gold purchases, and
-                    subscription records.
-                  </li>
-                  <li>
-                    <strong>User Content:</strong> Videos, images, and posts you
-                    upload.
-                  </li>
-                  <li>
-                    <strong>Referral & Subscription Data:</strong> Information
-                    about your referrals, earnings, and rewards.
-                  </li>
-                </ul>
-              </>
-            ),
-          },
-          {
-            title: "2. How We Use Your Information",
-            content: (
-              <ul className="list-disc list-inside space-y-2 text-gray-700">
-                <li>Manage and verify your account.</li>
-                <li>Process subscriptions, payments, and digital gold transactions.</li>
-                <li>Improve app experience and personalize content.</li>
-                <li>Communicate updates, offers, and new features.</li>
-                <li>Ensure compliance with legal obligations.</li>
-                <li>Prevent fraud, misuse, or unauthorized access.</li>
-              </ul>
-            ),
-          },
-          {
-            title: "3. Information Sharing",
-            content: (
-              <>
-                <p>We do not sell your personal information. We may share limited data only with:</p>
-                <ul className="list-disc list-inside mt-3 space-y-2 text-gray-700">
-                  <li>Authorized Service Providers (payments, KYC, logistics).</li>
-                  <li>Legal Authorities (when required by law).</li>
-                  <li>Partner Brands or Franchisees (only with your consent).</li>
-                </ul>
-                <p className="mt-3">
-                  All third parties are bound by strict data protection and confidentiality agreements.
-                </p>
-              </>
-            ),
-          },
-          {
-            title: "4. Security",
-            content:
-              "We use SSL encryption, secure cloud storage, and restricted access controls to safeguard all user data. Financial and digital gold transactions are protected by MMTC-PAMP and other licensed partners.",
-          },
-          {
-            title: "5. Your Rights",
-            content: (
-              <>
-                <p>You may:</p>
-                <ul className="list-disc list-inside mt-3 space-y-2">
-                  <li>Access or update your personal details.</li>
-                  <li>Request deletion of your account or stored data.</li>
-                  <li>Opt out of marketing emails or notifications.</li>
-                </ul>
-                <p className="mt-3">
-                  For such requests, contact:{" "}
-                  <a href="mailto:info@pixla.in" className="text-blue-600 hover:underline">
-                    info@pixla.in
-                  </a>
-                </p>
-              </>
-            ),
-          },
-          {
-            title: "6. Cookies and Tracking",
-            content:
-              "Pixla uses cookies and analytics tools to enhance performance and improve user experience. You can control cookies through your browser or device settings.",
-          },
-          {
-            title: "7. Children’s Privacy",
-            content:
-              "Pixla is not intended for children under 13. We do not knowingly collect data from minors without parental consent.",
-          },
-          {
-            title: "8. Updates to This Policy",
-            content:
-              "We may update this Privacy Policy from time to time. Any revisions will be posted on this page with a new effective date.",
-          },
-          {
-            title: "9. Contact Us",
-            content: (
-              <>
-                <p>For any questions, concerns, or complaints about this Privacy Policy, please reach out to us at:</p>
-                <div className="mt-3 space-y-1">
-                  <p>📧 <a href="mailto:info@pixla.in" className="text-blue-600 hover:underline">info@pixla.in</a></p>
-                  <p>🏢 Tripalive.Me Technology Pvt Ltd</p>
-                  <p>Headquarters: Electronic City, Bengaluru, India</p>
-                </div>
-              </>
-            ),
-          },
-        ].map((section, index) => (
+      <div className="space-y-8 max-w-5xl mx-auto">
+        {sections.map((section, index) => (
           <div
             key={index}
-            className=" p-6 md:p-8 hover:shadow-lg hover:bg-white transition-all duration-300"
+            className="p-6 md:p-8 hover:bg-white hover:shadow-lg transition-all duration-300"
           >
-            <h2 className="text-lg md:text-2xl font-semibold text-black mb-3">
+            <h2 className="text-xl md:text-2xl font-semibold text-black mb-4">
               {section.title}
             </h2>
-            <div className="text-gray-700 text-sm md:text-base leading-relaxed">
-              {section.content}
-            </div>
+
+            {section.intro && (
+              <p className="mb-4 text-gray-700">
+                {section.intro}
+              </p>
+            )}
+
+            {section.text && (
+              <p className="text-gray-700 leading-relaxed">
+                {section.text}
+              </p>
+            )}
+
+            {section.content && (
+              <ul className="list-disc list-inside space-y-2 text-gray-700">
+                {section.content.map((item, i) => (
+                  <li key={i}>{item}</li>
+                ))}
+              </ul>
+            )}
+
+            {section.extra && (
+              <p className="mt-4 text-gray-700">
+                {section.extra}
+              </p>
+            )}
+
+            {section.contact && (
+              <div className="space-y-2 text-gray-700">
+                <p>
+                  For privacy-related questions or support,
+                  users may contact:
+                </p>
+
+                <p>
+                  <strong>
+                    Tripalive.Me Technology Pvt Ltd
+                  </strong>
+                </p>
+
+                <p>Pixla Gold Network</p>
+
+                <p>📧 support@pixla.in</p>
+
+                <p>🌐 https://www.pixla.in</p>
+              </div>
+            )}
           </div>
         ))}
       </div>
 
-      {/* Footer Info */}
+      {/* Footer */}
       <div className="text-center mt-16 text-gray-600 text-sm md:text-base">
-        <p>© 2025 Tripalive.Me Technology Pvt Ltd. All Rights Reserved.</p>
         <p>
-          Email:{" "}
-          <a href="mailto:info@pixla.in" className="text-blue-600 hover:underline">
-            info@pixla.in
-          </a>
-          {" "} | Headquarters: Bengaluru, India
+          © 2026 Tripalive.Me Technology Pvt Ltd.
+          All Rights Reserved.
         </p>
       </div>
     </section>
