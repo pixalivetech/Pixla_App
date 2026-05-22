@@ -2,37 +2,34 @@ import React from "react";
 
 const BrandsTabSection = () => {
   return (
-    <section className="bg-white py-14 px-6 md:px-24 font-sans">
+    <section className="bg-white py-16 px-6 md:px-24 font-sans overflow-hidden">
 
-      <div className="grid md:grid-cols-2 items-start gap-10 md:gap-20">
+      <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-12 lg:gap-20">
 
-        {/* Right Design */}
+        {/* RIGHT DESIGN */}
+        <div className="relative flex justify-center lg:justify-end order-1 lg:order-2">
 
-        <div className="relative flex justify-center md:justify-end order-1 md:order-2">
-
-          <div className="relative w-[320px] h-[420px] rounded-[35px] bg-gradient-to-b from-yellow-100 via-yellow-200 to-yellow-500 shadow-2xl overflow-hidden">
+          <div className="relative w-[280px] sm:w-[320px] h-[380px] sm:h-[420px] rounded-[35px] bg-gradient-to-b from-yellow-100 via-yellow-200 to-yellow-500 shadow-2xl overflow-hidden">
 
             {/* Blur Effects */}
-
             <div className="absolute top-8 left-8 w-24 h-24 bg-white/40 rounded-full blur-2xl"></div>
 
             <div className="absolute bottom-10 right-8 w-28 h-28 bg-yellow-300 rounded-full blur-3xl"></div>
 
             {/* Main Card */}
-
             <div className="absolute inset-0 flex items-center justify-center">
 
-              <div className="bg-white/80 backdrop-blur-lg rounded-3xl p-8 shadow-xl text-center w-[240px]">
+              <div className="bg-white/90 backdrop-blur-lg rounded-3xl p-6 sm:p-8 shadow-xl text-center w-[220px] sm:w-[240px]">
 
-                <div className="text-6xl mb-4">
+                <div className="text-5xl sm:text-6xl mb-4">
                   💎
                 </div>
 
-                <h3 className="text-2xl font-bold mb-2">
+                <h3 className="text-xl sm:text-2xl font-bold mb-2">
                   Pixla Jewellery
                 </h3>
 
-                <p className="text-sm text-gray-600 leading-6">
+                <p className="text-xs sm:text-sm text-gray-600 leading-6">
                   Try jewellery designs,
                   earn rewards and redeem
                   Gold Dots.
@@ -43,10 +40,9 @@ const BrandsTabSection = () => {
             </div>
 
             {/* Floating Card 1 */}
+            <div className="absolute top-6 right-3 bg-white px-4 py-3 rounded-2xl shadow-lg">
 
-            <div className="absolute top-8 right-4 bg-white px-4 py-3 rounded-2xl shadow-lg">
-
-              <h4 className="font-semibold text-yellow-600">
+              <h4 className="font-semibold text-yellow-600 text-sm">
                 AR Preview
               </h4>
 
@@ -57,10 +53,9 @@ const BrandsTabSection = () => {
             </div>
 
             {/* Floating Card 2 */}
+            <div className="absolute bottom-8 left-3 bg-white px-4 py-3 rounded-2xl shadow-lg">
 
-            <div className="absolute bottom-8 left-4 bg-white px-4 py-3 rounded-2xl shadow-lg">
-
-              <h4 className="font-semibold text-green-600">
+              <h4 className="font-semibold text-green-600 text-sm">
                 Green Mission
               </h4>
 
@@ -74,77 +69,78 @@ const BrandsTabSection = () => {
 
         </div>
 
-        {/* Left Content */}
+        {/* LEFT CONTENT */}
+        <div className="text-center lg:text-left order-2 lg:order-1">
 
-        <div className="text-center md:text-left order-2 md:order-1">
-
-          {/* How It Works */}
-
+          {/* HOW IT WORKS */}
           <div className="mb-10">
 
-            <h3 className="text-lg sm:text-xl md:text-2xl font-semibold text-black mb-4">
+            <h3 className="text-2xl md:text-3xl font-bold text-black mb-5">
               How It Works
             </h3>
 
-            <ol className="list-decimal list-inside text-gray-700 space-y-2 text-sm sm:text-base md:text-lg leading-relaxed">
+            <ol className="list-decimal list-inside text-gray-700 space-y-4 text-sm sm:text-base md:text-lg leading-8 text-left mx-auto lg:mx-0">
 
               <li>
-                AR Try-On – Virtually try thousands
-                of jewellery designs.
+                AR Try-On – Virtually try
+                thousands of jewellery designs.
               </li>
 
               <li>
-                Explore Collections – Browse
-                digital gold and jewellery.
+                Explore Collections –
+                Browse digital gold and
+                jewellery products.
               </li>
 
               <li>
-                Earn Gold Dots – Collect rewards
-                through engagement.
+                Earn Gold Dots –
+                Gain rewards through
+                engagement activities.
               </li>
 
               <li>
                 Plant Trees While Growing Wealth –
-                Every gram supports green mission.
+                Every gram supports the
+                green mission initiative.
               </li>
 
             </ol>
 
           </div>
 
-          {/* Key Highlights */}
-
+          {/* KEY HIGHLIGHTS */}
           <div>
 
-            <h3 className="text-lg sm:text-xl md:text-2xl font-semibold text-black mb-4">
+            <h3 className="text-2xl md:text-3xl font-bold text-black mb-5">
               Key Highlights
             </h3>
 
-            <ol className="list-decimal list-inside text-gray-700 space-y-2 text-sm sm:text-base md:text-lg leading-relaxed">
+            <ol className="list-decimal list-inside text-gray-700 space-y-4 text-sm sm:text-base md:text-lg leading-8 text-left mx-auto lg:mx-0">
 
               <li>
                 AR Jewellery Preview –
-                Try thousands of designs.
+                Try thousands of designs
+                before redemption.
               </li>
 
               <li>
-                Exclusive Gold & Jewellery –
-                Build real wealth.
+                Exclusive Gold &
+                Jewellery Collections.
               </li>
 
               <li>
-                Earn Rewards –
-                Gain Gold Dots.
+                Earn Rewards Through
+                Gold Dots participation.
               </li>
 
               <li>
-                Fast Redemption –
-                Convert into jewellery.
+                Fast Jewellery Redemption
+                options available.
               </li>
 
               <li>
-                Green Mission –
-                Tree plantation support.
+                Green Mission Support
+                with tree plantation.
               </li>
 
             </ol>

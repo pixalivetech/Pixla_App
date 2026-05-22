@@ -4,78 +4,102 @@ const PixlaGoldTabSection = () => {
 
   const items = [
     {
-      title: "Earn & Save",
+      title: "Buy Digital Gold",
       content:
-        "Earn Gold Dots automatically for daily activity and build long-term wealth.",
+        "Start purchasing digital gold securely from as low as ₹1 through flexible savings plans.",
     },
     {
-      title: "Start Investing from ₹10",
+      title: "Save & Grow",
       content:
-        "Buy digital gold instantly with Daily, Weekly or Monthly plans.",
+        "Build long-term wealth through digital gold participation within the Pixla Gold ecosystem.",
     },
     {
-      title: "Redeem for 22K Jewellery",
+      title: "Creator Engagement Rewards",
       content:
-        "Convert Gold Dots into certified jewellery securely.",
+        "Creators earn Gold Dots through views, engagement, audience growth and community participation.",
     },
     {
-      title: "Sell / Exchange Old Gold",
+      title: "Referral & Subscription Benefits",
       content:
-        "Exchange old gold for Gold Dots or digital balance.",
+        "Users can participate through referrals, subscriptions and ecosystem activities.",
     },
     {
-      title: "100% Secure & Transparent",
+      title: "Jewellery Redemption",
       content:
-        "Insured storage with transparent tracking.",
+        "Gold and Gold Dots can be redeemed through trusted partner jewellery stores and Pixla Gold branches.",
     },
   ];
 
   return (
-    <section className="bg-white py-16 px-6 md:px-24 font-sans">
+    <section className="bg-white py-16 px-6 md:px-24 font-sans overflow-hidden">
 
-      {/* Top Section */}
+      {/* TOP SECTION */}
 
-      <div className="grid md:grid-cols-2 gap-10 md:gap-20 mb-10">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 mb-12">
 
         <div>
 
-          <h2 className="text-xl md:text-3xl font-semibold text-black mb-2">
+          <h2 className="text-3xl md:text-5xl font-bold text-black mb-4">
             Pixla Gold
           </h2>
 
-          <p className="text-yellow-500 text-sm sm:text-base md:text-lg font-semibold mb-4">
-            Turn Every Gram into Growth
-            <br />
-            Wealth for You, Life for Earth.
+          <p className="text-yellow-500 text-base md:text-xl font-semibold leading-relaxed">
+            Buy. Save. Grow Digital Gold
           </p>
 
         </div>
 
-        <p className="text-gray-700 text-sm md:text-lg leading-relaxed max-w-md">
-          Turn everyday actions into wealth.
-          Every swipe, referral and purchase
-          earns Gold Dots toward real gold.
-        </p>
+        <div>
+
+          <p className="text-gray-700 text-sm sm:text-base md:text-lg leading-8 max-w-2xl">
+
+            Pixla Gold helps users buy, save,
+            and grow digital gold securely
+            within the Pixla Gold ecosystem.
+
+            <br />
+            <br />
+
+            Users can start purchasing digital
+            gold from as low as ₹1 through
+            flexible savings plans designed
+            for long-term wealth creation.
+
+            <br />
+            <br />
+
+            Creators can earn Gold Dots through
+            engagement and community growth,
+            while users participate through
+            referrals, subscriptions, and
+            ecosystem activities.
+
+          </p>
+
+        </div>
 
       </div>
 
-      {/* Bottom Section */}
+      {/* BOTTOM SECTION */}
 
-      <div className="grid md:grid-cols-2 items-start gap-16">
+      <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-12 lg:gap-20">
 
-        {/* Left Content */}
+        {/* LEFT CONTENT */}
 
-        <div className="space-y-5">
+        <div className="space-y-6">
 
           {items.map((item, index) => (
 
-            <div key={index} className="p-4">
+            <div
+              key={index}
+              className="bg-gray-50 rounded-2xl p-5"
+            >
 
-              <h4 className="font-semibold text-black text-base md:text-lg mb-1">
+              <h4 className="font-semibold text-black text-lg mb-2">
                 {item.title}
               </h4>
 
-              <p className="text-gray-600 text-sm md:text-base leading-relaxed">
+              <p className="text-gray-600 text-sm md:text-base leading-7">
                 {item.content}
               </p>
 
@@ -85,13 +109,13 @@ const PixlaGoldTabSection = () => {
 
         </div>
 
-        {/* Right Premium Card */}
+        {/* RIGHT CARD */}
 
-        <div className="flex justify-center md:justify-end">
+        <div className="flex justify-center lg:justify-end">
 
-          <div className="relative w-[320px] h-[420px] rounded-[35px] bg-gradient-to-b from-yellow-100 via-yellow-200 to-yellow-500 shadow-2xl overflow-hidden">
+          <div className="relative w-[280px] sm:w-[320px] h-[380px] sm:h-[420px] rounded-[35px] bg-gradient-to-b from-yellow-100 via-yellow-200 to-yellow-500 shadow-2xl overflow-hidden">
 
-            {/* Blur */}
+            {/* Blur Effects */}
 
             <div className="absolute top-8 left-8 w-24 h-24 bg-white/40 rounded-full blur-2xl"></div>
 
@@ -101,47 +125,49 @@ const PixlaGoldTabSection = () => {
 
             <div className="absolute inset-0 flex items-center justify-center">
 
-              <div className="bg-white/80 backdrop-blur-lg rounded-3xl p-8 shadow-xl text-center w-[240px]">
+              <div className="bg-white/90 backdrop-blur-lg rounded-3xl p-6 sm:p-8 shadow-xl text-center w-[220px] sm:w-[240px]">
 
-                <div className="text-6xl mb-4">
+                <div className="text-5xl sm:text-6xl mb-4">
                   🪙
                 </div>
 
-                <h3 className="text-2xl font-bold mb-2">
+                <h3 className="text-xl sm:text-2xl font-bold mb-2">
                   Pixla Gold
                 </h3>
 
-                <p className="text-sm text-gray-600 leading-6">
-                  Earn, save and convert
-                  digital gold rewards.
+                <p className="text-xs sm:text-sm text-gray-600 leading-6">
+                  Buy, save and grow
+                  digital gold securely.
                 </p>
 
               </div>
 
             </div>
 
-            {/* Floating Card */}
+            {/* Floating Card 1 */}
 
-            <div className="absolute top-8 right-4 bg-white px-4 py-3 rounded-2xl shadow-lg">
+            <div className="absolute top-6 right-3 bg-white px-4 py-3 rounded-2xl shadow-lg">
 
-              <h4 className="font-semibold text-yellow-600">
-                ₹10 Start
+              <h4 className="font-semibold text-yellow-600 text-sm">
+                ₹1 Start
               </h4>
 
               <p className="text-xs text-gray-500">
-                Digital Saving
+                Digital Gold
               </p>
 
             </div>
 
-            <div className="absolute bottom-8 left-4 bg-white px-4 py-3 rounded-2xl shadow-lg">
+            {/* Floating Card 2 */}
 
-              <h4 className="font-semibold text-green-600">
-                22K Gold
+            <div className="absolute bottom-8 left-3 bg-white px-4 py-3 rounded-2xl shadow-lg">
+
+              <h4 className="font-semibold text-green-600 text-sm">
+                Gold Dots
               </h4>
 
               <p className="text-xs text-gray-500">
-                Redeem Anytime
+                Redeem Benefits
               </p>
 
             </div>

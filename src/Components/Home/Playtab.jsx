@@ -2,56 +2,60 @@ import React from "react";
 
 const PlaysAndGoldDotsSection = () => {
   return (
-    <section className="bg-white py-12 px-6 md:px-24 font-sans">
+    <section className="bg-white py-16 px-6 md:px-24 font-sans overflow-hidden">
 
-      {/* ================= Pixla Plays Section ================= */}
-      <div className="grid md:grid-cols-2 items-center gap-10 md:gap-20 mb-20">
+      {/* ================= PIXLA PLAYS ================= */}
 
-        {/* Left Design */}
-        <div className="relative flex justify-center md:justify-start">
+      <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-12 lg:gap-20 mb-24">
 
-          <div className="relative w-[320px] h-[420px] rounded-[35px] bg-gradient-to-b from-yellow-100 via-yellow-200 to-yellow-500 shadow-2xl overflow-hidden">
+        {/* LEFT DESIGN */}
+        <div className="relative flex justify-center lg:justify-start">
 
+          <div className="relative w-[280px] sm:w-[320px] h-[380px] sm:h-[420px] rounded-[35px] bg-gradient-to-b from-yellow-100 via-yellow-200 to-yellow-500 shadow-2xl overflow-hidden">
+
+            {/* Blur */}
             <div className="absolute top-8 left-8 w-24 h-24 bg-white/40 rounded-full blur-2xl"></div>
 
             <div className="absolute bottom-10 right-8 w-28 h-28 bg-yellow-300 rounded-full blur-3xl"></div>
 
+            {/* Main Card */}
             <div className="absolute inset-0 flex items-center justify-center">
 
-              <div className="bg-white/80 backdrop-blur-lg rounded-3xl p-8 shadow-xl text-center w-[240px]">
+              <div className="bg-white/90 backdrop-blur-lg rounded-3xl p-6 sm:p-8 shadow-xl text-center w-[220px] sm:w-[240px]">
 
-                <div className="text-6xl mb-4">
+                <div className="text-5xl sm:text-6xl mb-4">
                   ▶️
                 </div>
 
-                <h3 className="text-2xl font-bold mb-2">
+                <h3 className="text-xl sm:text-2xl font-bold mb-2">
                   Pixla Plays
                 </h3>
 
-                <p className="text-sm text-gray-600 leading-6">
-                  Watch videos, swipe content
-                  and earn Gold Dots.
+                <p className="text-xs sm:text-sm text-gray-600 leading-6">
+                  Watch, swipe, and discover trending creators
                 </p>
 
               </div>
 
             </div>
 
-            <div className="absolute top-8 right-4 bg-white px-4 py-3 rounded-2xl shadow-lg">
+            {/* Top Badge */}
+            <div className="absolute top-6 right-3 bg-white px-4 py-3 rounded-2xl shadow-lg">
 
-              <h4 className="font-semibold text-yellow-600">
+              <h4 className="font-semibold text-yellow-600 text-sm">
                 + Gold Dots
               </h4>
 
               <p className="text-xs text-gray-500">
-                Every Swipe
+                Every Views
               </p>
 
             </div>
 
-            <div className="absolute bottom-8 left-4 bg-white px-4 py-3 rounded-2xl shadow-lg">
+            {/* Bottom Badge */}
+            <div className="absolute bottom-8 left-3 bg-white px-4 py-3 rounded-2xl shadow-lg">
 
-              <h4 className="font-semibold text-green-600">
+              <h4 className="font-semibold text-green-600 text-sm">
                 Trending
               </h4>
 
@@ -65,176 +69,131 @@ const PlaysAndGoldDotsSection = () => {
 
         </div>
 
-        {/* Right Content */}
-        <div className="text-center md:text-left">
+        {/* RIGHT CONTENT */}
+        <div className="text-center lg:text-left">
 
-          <h2 className="text-xl sm:text-2xl md:text-4xl font-semibold text-black mb-2">
+          <h2 className="text-3xl md:text-5xl font-bold text-black mb-4">
             Pixla Plays
           </h2>
 
-          <p className="text-yellow-500 text-sm sm:text-base md:text-lg font-semibold mb-5">
-            Watch. Swipe. Earn Every Swipe.
+          <p className="text-yellow-500 text-base md:text-xl font-semibold mb-6">
+            Watch. Swipe. Discover Trending Creators.
           </p>
 
-          <p className="text-gray-700 text-sm sm:text-base md:text-lg leading-relaxed mb-6">
-            Welcome to the heart of Pixla!
-            Users can watch and swipe short
-            videos and earn Gold Dots.
-          </p>
+          <p className="text-gray-700 text-sm sm:text-base md:text-lg leading-8 max-w-2xl mx-auto lg:mx-0">
 
-          <ol className="list-decimal list-inside text-gray-700 space-y-3 text-sm sm:text-base md:text-lg leading-relaxed">
+            Pixla Plays is the entertainment hub of
+            the Pixla Gold ecosystem where users can
+            watch and enjoy engaging short videos
+            just like other social media platforms.
 
-            <li>
-              <strong>Earn while you scroll</strong> —
-              Watch more and earn more Gold Dots.
-            </li>
+            <br />
+            <br />
 
-            <li>
-              <strong>Discover</strong> —
-              Explore trending creators and content.
-            </li>
+            Creators earn Gold Dots based on views,
+            likes, comments, shares, audience
+            engagement, and community growth
+            generated through their content.
 
-            <li>
-              <strong>Build your digital wealth</strong> —
-              Convert entertainment into gold savings.
-            </li>
+            <br />
+            <br />
 
-          </ol>
+            Every interaction helps creators grow
+            their influence and rewards within the
+            ecosystem.
 
-          <p className="text-black font-medium text-sm sm:text-base md:text-lg mt-6">
-            Every swipe helps build your wealth.
           </p>
 
         </div>
 
       </div>
 
-      {/* ================= Gold Dots Section ================= */}
+      {/* ================= MANAGE GOLD DOTS ================= */}
 
-      <div className="grid md:grid-cols-2 gap-10 items-center">
+      <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-12 lg:gap-20">
 
-        {/* Left Content */}
+        {/* LEFT CONTENT */}
+        <div className="text-center lg:text-left">
 
-        <div className="text-center md:text-left">
-
-          <h2 className="text-2xl sm:text-3xl md:text-5xl font-semibold text-black mb-3">
+          <h2 className="text-3xl md:text-5xl font-bold text-black mb-4">
             Manage Gold Dots
           </h2>
 
-          <p className="text-yellow-500 text-sm sm:text-base md:text-lg font-semibold mb-6">
-            Earn. Track. Convert. Grow.
+          <p className="text-yellow-500 text-base md:text-xl font-semibold mb-6">
+            Earn. Manage. Grow.
           </p>
 
-          <p className="text-gray-700 text-sm sm:text-base md:text-lg leading-relaxed mb-8">
-            Turn engagement into value with
-            Pixla Gold Dots and manage them
-            easily in one place.
+          <p className="text-gray-700 text-sm sm:text-base md:text-lg leading-8 max-w-2xl mx-auto lg:mx-0">
+
+            Earn and manage Gold Dots through
+            creator engagement, views, likes,
+            comments, shares, referrals, and
+            ecosystem participation within the
+            Pixla Gold Network.
+
+            <br />
+            <br />
+
+            Track your total Gold Dots, monitor
+            growth, and explore jewellery-related
+            benefits through trusted Pixla partner
+            networks and ecosystem activities.
+
+            <br />
+            <br />
+
+            <span className="font-semibold text-black">
+              1 gram gold = 1,00,000 Gold Dots.
+            </span>
+
+            <br />
+            <br />
+
+            Users can grow their digital gold
+            participation through subscriptions,
+            engagement, and community-driven
+            activities.
+
           </p>
-
-          <div className="space-y-6 text-gray-700 text-sm sm:text-base md:text-lg">
-
-            <div>
-
-              <h3 className="font-semibold text-black mb-1">
-                Your Digital Gold Wallet
-              </h3>
-
-              <p>
-                View total Gold Dots and
-                monitor rewards growth.
-              </p>
-
-            </div>
-
-            <div>
-
-              <h3 className="font-semibold text-black mb-1">
-                Convert to Jewellery
-              </h3>
-
-              <p>
-                Convert Gold Dots into real
-                jewellery through Pixla branches.
-              </p>
-
-            </div>
-
-            <div>
-
-              <h3 className="font-semibold text-black mb-1">
-                Transparent Conversion
-              </h3>
-
-              <p>
-                1 gram gold = 1,00,000 Gold Dots.
-              </p>
-
-            </div>
-
-            <div>
-
-              <h3 className="font-semibold text-black mb-1">
-                Grow Your Gold
-              </h3>
-
-              <p>
-                Buy additional Gold Dots and
-                increase savings anytime.
-              </p>
-
-            </div>
-
-            <div>
-
-              <h3 className="font-semibold text-black mb-1">
-                Partner & Earn More
-              </h3>
-
-              <p>
-                Unlock premium rewards and
-                subscription benefits.
-              </p>
-
-            </div>
-
-          </div>
 
         </div>
 
-        {/* Right Design */}
-
+        {/* RIGHT DESIGN */}
         <div className="flex justify-center">
 
-          <div className="relative w-[320px] h-[420px] rounded-[35px] bg-gradient-to-b from-yellow-100 via-yellow-200 to-yellow-500 shadow-2xl overflow-hidden">
+          <div className="relative w-[280px] sm:w-[320px] h-[380px] sm:h-[420px] rounded-[35px] bg-gradient-to-b from-yellow-100 via-yellow-200 to-yellow-500 shadow-2xl overflow-hidden">
 
+            {/* Blur */}
             <div className="absolute top-8 left-8 w-24 h-24 bg-white/40 rounded-full blur-2xl"></div>
 
             <div className="absolute bottom-10 right-8 w-28 h-28 bg-yellow-300 rounded-full blur-3xl"></div>
 
+            {/* Main Card */}
             <div className="absolute inset-0 flex items-center justify-center">
 
-              <div className="bg-white/80 backdrop-blur-lg rounded-3xl p-8 shadow-xl text-center w-[240px]">
+              <div className="bg-white/90 backdrop-blur-lg rounded-3xl p-6 sm:p-8 shadow-xl text-center w-[220px] sm:w-[240px]">
 
-                <div className="text-6xl mb-4">
+                <div className="text-5xl sm:text-6xl mb-4">
                   🪙
                 </div>
 
-                <h3 className="text-2xl font-bold mb-2">
+                <h3 className="text-xl sm:text-2xl font-bold mb-2">
                   Gold Dots
                 </h3>
 
-                <p className="text-sm text-gray-600 leading-6">
-                  Earn, track and convert
-                  your digital rewards.
+                <p className="text-xs sm:text-sm text-gray-600 leading-6">
+                  Earn, manage and grow
+                  digital rewards.
                 </p>
 
               </div>
 
             </div>
 
-            <div className="absolute top-8 right-4 bg-white px-4 py-3 rounded-2xl shadow-lg">
+            {/* Top Badge */}
+            <div className="absolute top-6 right-3 bg-white px-4 py-3 rounded-2xl shadow-lg">
 
-              <h4 className="font-semibold text-yellow-600">
+              <h4 className="font-semibold text-yellow-600 text-sm">
                 1L Dots
               </h4>
 
@@ -244,14 +203,15 @@ const PlaysAndGoldDotsSection = () => {
 
             </div>
 
-            <div className="absolute bottom-8 left-4 bg-white px-4 py-3 rounded-2xl shadow-lg">
+            {/* Bottom Badge */}
+            <div className="absolute bottom-8 left-3 bg-white px-4 py-3 rounded-2xl shadow-lg">
 
-              <h4 className="font-semibold text-green-600">
+              <h4 className="font-semibold text-green-600 text-sm">
                 Grow Gold
               </h4>
 
               <p className="text-xs text-gray-500">
-                Convert Anytime
+                Partner Benefits
               </p>
 
             </div>
