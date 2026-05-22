@@ -1,5 +1,4 @@
 import React from "react";
-import PhoneImg from "./../../assets/Home/Pixla-phone.png";
 
 import EarnIcon from "./../../assets/Home/Earn.png";
 import ShopIcon from "./../../assets/Home/shop.png";
@@ -20,17 +19,15 @@ const WhyChoosePixla = () => {
         Why Choose Pixla?
       </h2>
 
-      {/* Layout */}
       <div className="flex flex-col md:flex-row items-center justify-center gap-12 md:gap-24 max-w-7xl mx-auto">
 
-        {/* Left Side */}
+        {/* LEFT SIDE */}
         <div className="flex flex-col text-left gap-10 w-full md:w-1/3">
 
-          {/* Feature 1 */}
           <div>
             <img
               src={EarnIcon}
-              alt="Creator Engagement"
+              alt=""
               className="w-12 h-12 mb-3"
             />
 
@@ -39,17 +36,16 @@ const WhyChoosePixla = () => {
             </h3>
 
             <p className="text-gray-600 text-sm leading-6">
-              Creators earn Gold Dots based on views, likes, comments,
-              shares, engagement, and business growth generated through
-              their content.
+              Creators earn Gold Dots based on views,
+              likes, comments, shares, engagement,
+              and business growth.
             </p>
           </div>
 
-          {/* Feature 2 */}
           <div>
             <img
               src={ShopIcon}
-              alt="Digital Gold"
+              alt=""
               className="w-12 h-12 mb-3"
             />
 
@@ -58,16 +54,16 @@ const WhyChoosePixla = () => {
             </h3>
 
             <p className="text-gray-600 text-sm leading-6">
-              Users can buy, save, and redeem digital gold securely
-              through the Pixla Gold ecosystem.
+              Users can buy, save and redeem
+              digital gold securely through
+              Pixla Gold ecosystem.
             </p>
           </div>
 
-          {/* Feature 3 */}
           <div>
             <img
               src={ReferralIcon}
-              alt="Community Growth"
+              alt=""
               className="w-12 h-12 mb-3"
             />
 
@@ -76,30 +72,78 @@ const WhyChoosePixla = () => {
             </h3>
 
             <p className="text-gray-600 text-sm leading-6">
-              Creators can build strong communities, increase engagement,
-              and unlock long-term growth opportunities.
+              Grow communities, improve engagement
+              and unlock long-term opportunities.
             </p>
           </div>
 
         </div>
 
-        {/* Phone Image */}
-        <div className="flex justify-center w-full md:w-1/3">
-          <img
-            src={PhoneImg}
-            alt="Pixla App"
-            className="w-[220px] md:w-[300px] object-contain"
-          />
+        {/* CENTER DESIGN */}
+        <div className="relative w-full md:w-1/3 flex justify-center">
+
+          <div className="relative w-[300px] h-[420px] rounded-[40px] bg-gradient-to-b from-yellow-100 via-yellow-200 to-yellow-500 shadow-2xl flex items-center justify-center overflow-hidden">
+
+            {/* Blur circles */}
+            <div className="absolute top-8 left-8 w-20 h-20 bg-white/30 rounded-full blur-xl"></div>
+
+            <div className="absolute bottom-10 right-8 w-24 h-24 bg-yellow-300 rounded-full blur-2xl"></div>
+
+            {/* Main Card */}
+            <div className="bg-white/70 backdrop-blur-lg rounded-3xl p-8 shadow-xl text-center">
+
+              <div className="text-6xl mb-4">
+                🪙
+              </div>
+
+              <h3 className="text-2xl font-bold mb-2">
+                Pixla Gold
+              </h3>
+
+              <p className="text-sm text-gray-700 leading-6">
+                Creator Economy + Digital Gold +
+                Community Growth Platform
+              </p>
+
+            </div>
+
+            {/* Floating card top */}
+            <div className="absolute top-10 -right-5 bg-white shadow-lg px-5 py-3 rounded-2xl">
+
+              <h4 className="font-bold text-yellow-600">
+                +5000
+              </h4>
+
+              <p className="text-xs text-gray-500">
+                Gold Rewards
+              </p>
+
+            </div>
+
+            {/* Floating card bottom */}
+            <div className="absolute bottom-10 -left-5 bg-white shadow-lg px-5 py-3 rounded-2xl">
+
+              <h4 className="font-bold text-green-600">
+                🌱 Green Mission
+              </h4>
+
+              <p className="text-xs text-gray-500">
+                Tree Plantation
+              </p>
+
+            </div>
+
+          </div>
+
         </div>
 
-        {/* Right Side */}
+        {/* RIGHT SIDE */}
         <div className="flex flex-col text-left gap-10 w-full md:w-1/3">
 
-          {/* Feature 4 */}
           <div>
             <img
               src={GoldIcon}
-              alt="Pixla Gold"
+              alt=""
               className="w-12 h-12 mb-3"
             />
 
@@ -108,16 +152,15 @@ const WhyChoosePixla = () => {
             </h3>
 
             <p className="text-gray-600 text-sm leading-6">
-              Access premium features, enhanced rewards, exclusive
-              benefits, and a smarter social gold experience.
+              Premium access, rewards and
+              smarter social gold experience.
             </p>
           </div>
 
-          {/* Feature 5 */}
           <div>
             <img
               src={SavingsIcon}
-              alt="Digital Ecosystem"
+              alt=""
               className="w-12 h-12 mb-3"
             />
 
@@ -126,16 +169,15 @@ const WhyChoosePixla = () => {
             </h3>
 
             <p className="text-gray-600 text-sm leading-6">
-              Connecting creators, users, jewellery partners, and
-              franchise entrepreneurs through one unified platform.
+              Connecting creators, users,
+              jewellery partners and franchises.
             </p>
           </div>
 
-          {/* Feature 6 */}
           <div>
             <img
               src={TreeIcon}
-              alt="Green Mission"
+              alt=""
               className="w-12 h-12 mb-3"
             />
 
@@ -144,13 +186,13 @@ const WhyChoosePixla = () => {
             </h3>
 
             <p className="text-gray-600 text-sm leading-6">
-              Every gram of gold sold and every subscription supports
-              the Pixla Green Mission through tree plantation and
-              sustainability initiatives.
+              Supporting sustainability and
+              tree plantation initiatives.
             </p>
           </div>
 
         </div>
+
       </div>
     </section>
   );
