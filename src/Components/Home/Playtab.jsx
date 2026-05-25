@@ -8,12 +8,11 @@ const PlaysAndGoldDotsSection = () => {
 
       <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-12 lg:gap-20 mb-24">
 
-        {/* LEFT DESIGN */}
-        <div className="relative flex justify-center lg:justify-start">
+        {/* CARD FIRST */}
+        <div className="order-1 lg:order-1 flex justify-center">
 
           <div className="relative w-[280px] sm:w-[320px] h-[380px] sm:h-[420px] rounded-[35px] bg-gradient-to-b from-yellow-100 via-yellow-200 to-yellow-500 shadow-2xl overflow-hidden">
 
-            {/* Blur */}
             <div className="absolute top-8 left-8 w-24 h-24 bg-white/40 rounded-full blur-2xl"></div>
 
             <div className="absolute bottom-10 right-8 w-28 h-28 bg-yellow-300 rounded-full blur-3xl"></div>
@@ -32,7 +31,8 @@ const PlaysAndGoldDotsSection = () => {
                 </h3>
 
                 <p className="text-xs sm:text-sm text-gray-600 leading-6">
-                  Watch, swipe, and discover trending creators
+                  Watch, swipe and discover
+                  trending creators.
                 </p>
 
               </div>
@@ -47,7 +47,7 @@ const PlaysAndGoldDotsSection = () => {
               </h4>
 
               <p className="text-xs text-gray-500">
-                Every Views
+                Every View
               </p>
 
             </div>
@@ -69,8 +69,8 @@ const PlaysAndGoldDotsSection = () => {
 
         </div>
 
-        {/* RIGHT CONTENT */}
-        <div className="text-center lg:text-left">
+        {/* CONTENT */}
+        <div className="order-2 lg:order-2 text-center lg:text-left">
 
           <h2 className="text-3xl md:text-5xl font-bold text-black mb-4">
             Pixla Plays
@@ -82,25 +82,20 @@ const PlaysAndGoldDotsSection = () => {
 
           <p className="text-gray-700 text-sm sm:text-base md:text-lg leading-8 max-w-2xl mx-auto lg:mx-0">
 
-            Pixla Plays is the entertainment hub of
-            the Pixla Gold ecosystem where users can
-            watch and enjoy engaging short videos
-            just like other social media platforms.
+            Pixla Plays is the entertainment
+            hub where users watch engaging
+            short videos and discover creators.
 
-            <br />
-            <br />
+            <br /><br />
 
-            Creators earn Gold Dots based on views,
-            likes, comments, shares, audience
-            engagement, and community growth
-            generated through their content.
+            Creators earn Gold Dots through
+            views, likes, comments, shares
+            and audience engagement.
 
-            <br />
-            <br />
+            <br /><br />
 
-            Every interaction helps creators grow
-            their influence and rewards within the
-            ecosystem.
+            Every interaction helps creators
+            grow rewards and influence.
 
           </p>
 
@@ -108,62 +103,15 @@ const PlaysAndGoldDotsSection = () => {
 
       </div>
 
-      {/* ================= MANAGE GOLD DOTS ================= */}
+      {/* ================= GOLD DOTS ================= */}
 
       <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-12 lg:gap-20">
 
-        {/* LEFT CONTENT */}
-        <div className="text-center lg:text-left">
-
-          <h2 className="text-3xl md:text-5xl font-bold text-black mb-4">
-            Manage Gold Dots
-          </h2>
-
-          <p className="text-yellow-500 text-base md:text-xl font-semibold mb-6">
-            Earn. Manage. Grow.
-          </p>
-
-          <p className="text-gray-700 text-sm sm:text-base md:text-lg leading-8 max-w-2xl mx-auto lg:mx-0">
-
-            Earn and manage Gold Dots through
-            creator engagement, views, likes,
-            comments, shares, referrals, and
-            ecosystem participation within the
-            Pixla Gold Network.
-
-            <br />
-            <br />
-
-            Track your total Gold Dots, monitor
-            growth, and explore jewellery-related
-            benefits through trusted Pixla partner
-            networks and ecosystem activities.
-
-            <br />
-            <br />
-
-            <span className="font-semibold text-black">
-              1 gram gold = 1,00,000 Gold Dots.
-            </span>
-
-            <br />
-            <br />
-
-            Users can grow their digital gold
-            participation through subscriptions,
-            engagement, and community-driven
-            activities.
-
-          </p>
-
-        </div>
-
-        {/* RIGHT DESIGN */}
-        <div className="flex justify-center">
+        {/* CARD FIRST */}
+        <div className="order-1 lg:order-2 flex justify-center">
 
           <div className="relative w-[280px] sm:w-[320px] h-[380px] sm:h-[420px] rounded-[35px] bg-gradient-to-b from-yellow-100 via-yellow-200 to-yellow-500 shadow-2xl overflow-hidden">
 
-            {/* Blur */}
             <div className="absolute top-8 left-8 w-24 h-24 bg-white/40 rounded-full blur-2xl"></div>
 
             <div className="absolute bottom-10 right-8 w-28 h-28 bg-yellow-300 rounded-full blur-3xl"></div>
@@ -217,6 +165,47 @@ const PlaysAndGoldDotsSection = () => {
             </div>
 
           </div>
+
+        </div>
+
+        {/* CONTENT */}
+        <div className="order-2 lg:order-1 text-center lg:text-left">
+
+          <h2 className="text-3xl md:text-5xl font-bold text-black mb-4">
+            Manage Gold Dots
+          </h2>
+
+          <p className="text-yellow-500 text-base md:text-xl font-semibold mb-6">
+            Earn. Manage. Grow.
+          </p>
+
+          <p className="text-gray-700 text-sm sm:text-base md:text-lg leading-8 max-w-2xl mx-auto lg:mx-0">
+
+            Earn and manage Gold Dots
+            through creator engagement,
+            views, likes, comments,
+            referrals and participation.
+
+            <br /><br />
+
+            Track total Gold Dots,
+            monitor growth and explore
+            jewellery benefits through
+            partner networks.
+
+            <br /><br />
+
+            <span className="font-semibold text-black">
+              1 gram gold = 1,00,000 Gold Dots
+            </span>
+
+            <br /><br />
+
+            Grow participation through
+            subscriptions and community
+            activities.
+
+          </p>
 
         </div>
 

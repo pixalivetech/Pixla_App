@@ -1,57 +1,23 @@
 import React from "react";
 
 const PixlaGoldTabSection = () => {
-
-  const items = [
-    {
-      title: "Buy Digital Gold",
-      content:
-        "Start purchasing digital gold securely from as low as ₹1 through flexible savings plans.",
-    },
-    {
-      title: "Save & Grow",
-      content:
-        "Build long-term wealth through digital gold participation within the Pixla Gold ecosystem.",
-    },
-    {
-      title: "Creator Engagement Rewards",
-      content:
-        "Creators earn Gold Dots through views, engagement, audience growth and community participation.",
-    },
-    {
-      title: "Referral & Subscription Benefits",
-      content:
-        "Users can participate through referrals, subscriptions and ecosystem activities.",
-    },
-    {
-      title: "Jewellery Redemption",
-      content:
-        "Gold and Gold Dots can be redeemed through trusted partner jewellery stores and Pixla Gold branches.",
-    },
-  ];
-
   return (
     <section className="bg-white py-16 px-6 md:px-24 font-sans overflow-hidden">
 
-      {/* TOP SECTION */}
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
 
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 mb-12">
-
-        <div>
+        {/* LEFT CONTENT */}
+        <div className="order-2 lg:order-1 text-center lg:text-left">
 
           <h2 className="text-3xl md:text-5xl font-bold text-black mb-4">
             Pixla Gold
           </h2>
 
-          <p className="text-yellow-500 text-base md:text-xl font-semibold leading-relaxed">
+          <p className="text-yellow-500 text-base md:text-xl font-semibold mb-6">
             Buy. Save. Grow Digital Gold
           </p>
 
-        </div>
-
-        <div>
-
-          <p className="text-gray-700 text-sm sm:text-base md:text-lg leading-8 max-w-2xl">
+          <p className="text-gray-700 text-sm sm:text-base md:text-lg leading-8 max-w-2xl mx-auto lg:mx-0">
 
             Pixla Gold helps users buy, save,
             and grow digital gold securely
@@ -78,51 +44,17 @@ const PixlaGoldTabSection = () => {
 
         </div>
 
-      </div>
-
-      {/* BOTTOM SECTION */}
-
-      <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-12 lg:gap-20">
-
-        {/* LEFT CONTENT */}
-
-        <div className="space-y-6">
-
-          {items.map((item, index) => (
-
-            <div
-              key={index}
-              className="bg-gray-50 rounded-2xl p-5"
-            >
-
-              <h4 className="font-semibold text-black text-lg mb-2">
-                {item.title}
-              </h4>
-
-              <p className="text-gray-600 text-sm md:text-base leading-7">
-                {item.content}
-              </p>
-
-            </div>
-
-          ))}
-
-        </div>
-
         {/* RIGHT CARD */}
-
-        <div className="flex justify-center lg:justify-end">
+        <div className="order-1 lg:order-2 flex justify-center">
 
           <div className="relative w-[280px] sm:w-[320px] h-[380px] sm:h-[420px] rounded-[35px] bg-gradient-to-b from-yellow-100 via-yellow-200 to-yellow-500 shadow-2xl overflow-hidden">
 
-            {/* Blur Effects */}
-
+            {/* Blur Effect */}
             <div className="absolute top-8 left-8 w-24 h-24 bg-white/40 rounded-full blur-2xl"></div>
 
             <div className="absolute bottom-10 right-8 w-28 h-28 bg-yellow-300 rounded-full blur-3xl"></div>
 
             {/* Main Card */}
-
             <div className="absolute inset-0 flex items-center justify-center">
 
               <div className="bg-white/90 backdrop-blur-lg rounded-3xl p-6 sm:p-8 shadow-xl text-center w-[220px] sm:w-[240px]">
@@ -144,8 +76,7 @@ const PixlaGoldTabSection = () => {
 
             </div>
 
-            {/* Floating Card 1 */}
-
+            {/* Top Floating Card */}
             <div className="absolute top-6 right-3 bg-white px-4 py-3 rounded-2xl shadow-lg">
 
               <h4 className="font-semibold text-yellow-600 text-sm">
@@ -158,8 +89,7 @@ const PixlaGoldTabSection = () => {
 
             </div>
 
-            {/* Floating Card 2 */}
-
+            {/* Bottom Floating Card */}
             <div className="absolute bottom-8 left-3 bg-white px-4 py-3 rounded-2xl shadow-lg">
 
               <h4 className="font-semibold text-green-600 text-sm">
@@ -167,7 +97,7 @@ const PixlaGoldTabSection = () => {
               </h4>
 
               <p className="text-xs text-gray-500">
-                Redeem Benefits
+                Rewards
               </p>
 
             </div>

@@ -35,7 +35,7 @@ const WhyChoosePixla = () => {
               Earn Through Creator Engagement
             </h3>
 
-            <p className="text-gray-600 text-sm leading-6">
+            <p className="text-gray-600 text-md leading-6">
               Creators earn Gold Dots based on views,
               likes, comments, shares, engagement,
               and business growth.
@@ -53,7 +53,7 @@ const WhyChoosePixla = () => {
               Save, Redeem & Grow Gold
             </h3>
 
-            <p className="text-gray-600 text-sm leading-6">
+            <p className="text-gray-600 text-md leading-6">
               Users can buy, save and redeem
               digital gold securely through
               Pixla Gold ecosystem.
@@ -71,7 +71,7 @@ const WhyChoosePixla = () => {
               Build Communities & Grow Influence
             </h3>
 
-            <p className="text-gray-600 text-sm leading-6">
+            <p className="text-gray-600 text-md leading-6">
               Grow communities, improve engagement
               and unlock long-term opportunities.
             </p>
@@ -100,7 +100,7 @@ const WhyChoosePixla = () => {
                 Pixla Gold
               </h3>
 
-              <p className="text-sm text-gray-700 leading-6">
+              <p className="text-md text-gray-700 leading-6">
                 Creator Economy + Digital Gold +
                 Community Growth Platform
               </p>
@@ -151,9 +151,9 @@ const WhyChoosePixla = () => {
               Unlock the Power of Pixla Gold
             </h3>
 
-            <p className="text-gray-600 text-sm leading-6">
+            <p className="text-gray-600 text-md leading-6">
               Premium access, rewards and
-              smarter social gold experience.
+              mdarter social gold experience.
             </p>
           </div>
 
@@ -168,7 +168,7 @@ const WhyChoosePixla = () => {
               India’s Creator-Powered Digital Gold Ecosystem
             </h3>
 
-            <p className="text-gray-600 text-sm leading-6">
+            <p className="text-gray-600 text-md leading-6">
               Connecting creators, users,
               jewellery partners and franchises.
             </p>
@@ -185,7 +185,7 @@ const WhyChoosePixla = () => {
               Wealth Creation with Green Impact
             </h3>
 
-            <p className="text-gray-600 text-sm leading-6">
+            <p className="text-gray-600 text-md leading-6">
               Supporting sustainability and
               tree plantation initiatives.
             </p>

@@ -109,44 +109,7 @@ const BrandsTabSection = () => {
           </div>
 
           {/* KEY HIGHLIGHTS */}
-          <div>
-
-            <h3 className="text-2xl md:text-3xl font-bold text-black mb-5">
-              Key Highlights
-            </h3>
-
-            <ol className="list-decimal list-inside text-gray-700 space-y-4 text-sm sm:text-base md:text-lg leading-8 text-left mx-auto lg:mx-0">
-
-              <li>
-                AR Jewellery Preview –
-                Try thousands of designs
-                before redemption.
-              </li>
-
-              <li>
-                Exclusive Gold &
-                Jewellery Collections.
-              </li>
-
-              <li>
-                Earn Rewards Through
-                Gold Dots participation.
-              </li>
-
-              <li>
-                Fast Jewellery Redemption
-                options available.
-              </li>
-
-              <li>
-                Green Mission Support
-                with tree plantation.
-              </li>
-
-            </ol>
-
-          </div>
-
+         
         </div>
 
       </div>

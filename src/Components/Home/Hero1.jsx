@@ -16,7 +16,7 @@ const HeroSection = () => {
       <div className="pt-38 md:pt-56 flex flex-col items-center justify-center">
         {/* Heading */}
         <h1 className="text-4xl md:text-6xl font-semibold text-black mb-4">
-         India’s Creator-Powered Digital Gold Network
+         India’s Creator-Powered Digital Gold Saving Network
         </h1>
 
         {/* Subtext */}

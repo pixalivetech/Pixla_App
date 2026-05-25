@@ -5,76 +5,79 @@ const AboutSection = () => {
   return (
     <section
       id="about"
-      className="w-full bg-white py-12 px-6 md:px-24 font-sans"
+      className="bg-white py-16 px-6 md:px-24 font-sans"
     >
-      <div className="mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-start">
-        
-        {/* Left Side - Heading */}
+
+      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
+
+        {/* LEFT SIDE */}
         <div>
-          <h2 className="text-4xl md:text-5xl font-semibold text-black">
+
+          <h2 className="text-4xl md:text-5xl font-semibold text-black leading-tight">
             About Pixla
           </h2>
+
         </div>
 
-        {/* Right Side - Content */}
-        <div className="text-gray-700 leading-relaxed">
-          <p className="text-base md:text-lg mb-6">
-            Pixla Gold Network is India’s creator-powered social digital gold
-            savings ecosystem designed to connect users, creators, jewellery
-            partners, and franchise entrepreneurs through one unified platform.
+        {/* RIGHT SIDE */}
+        <div>
+
+          <p className="text-gray-700 text-base md:text-lg leading-8 mb-8">
+
+            Pixla Gold Network is India’s creator-powered
+            social digital gold savings ecosystem connecting
+            users, creators, jewellery partners and franchise
+            entrepreneurs through one platform.
+
             <br />
             <br />
-            Pixla combines social engagement, creator economy, digital gold
-            savings, and trusted local jewellery networks to create a
-            next-generation community-driven financial ecosystem.
+
+            Pixla combines social engagement,
+            creator economy, digital gold savings
+            and trusted jewellery networks into a
+            community-driven ecosystem.
+
           </p>
 
-          <h3 className="text-lg md:text-xl font-semibold text-black mb-4">
-            With Pixla, users can:
-          </h3>
+          {/* Features */}
+          <div className="space-y-4 border-l-2 border-yellow-500 pl-5">
 
-          <ul className="space-y-4 text-base md:text-lg">
-            <li className="flex items-start gap-3">
-              <FaCheckCircle className="text-black mt-1 text-xl flex-shrink-0" />
+            <div className="flex items-start gap-3">
+              <FaCheckCircle className="text-yellow-500 mt-1" />
               <span>Save digital gold through the ecosystem</span>
-            </li>
+            </div>
 
-            <li className="flex items-start gap-3">
-              <FaCheckCircle className="text-black mt-1 text-xl flex-shrink-0" />
-              <span>Engage with creators and community networks</span>
-            </li>
+            <div className="flex items-start gap-3">
+              <FaCheckCircle className="text-yellow-500 mt-1" />
+              <span>Engage with creators and communities</span>
+            </div>
 
-            <li className="flex items-start gap-3">
-              <FaCheckCircle className="text-black mt-1 text-xl flex-shrink-0" />
-              <span>Earn Gold Dots through platform activities</span>
-            </li>
+            <div className="flex items-start gap-3">
+              <FaCheckCircle className="text-yellow-500 mt-1" />
+              <span>Earn Gold Dots and rewards</span>
+            </div>
 
-            <li className="flex items-start gap-3">
-              <FaCheckCircle className="text-black mt-1 text-xl flex-shrink-0" />
-              <span>
-                Redeem jewellery through trusted local partners
-              </span>
-            </li>
+            <div className="flex items-start gap-3">
+              <FaCheckCircle className="text-yellow-500 mt-1" />
+              <span>Redeem jewellery through partners</span>
+            </div>
 
-            <li className="flex items-start gap-3">
-              <FaCheckCircle className="text-black mt-1 text-xl flex-shrink-0" />
-              <span>Join referral-driven savings communities</span>
-            </li>
+            <div className="flex items-start gap-3">
+              <FaCheckCircle className="text-yellow-500 mt-1" />
+              <span>Join referral savings communities</span>
+            </div>
 
-            <li className="flex items-start gap-3">
-              <FaCheckCircle className="text-black mt-1 text-xl flex-shrink-0" />
-              <span>Access creator-led campaigns and rewards</span>
-            </li>
+            <div className="flex items-start gap-3">
+              <FaCheckCircle className="text-yellow-500 mt-1" />
+              <span>Become franchise partners</span>
+            </div>
 
-            <li className="flex items-start gap-3">
-              <FaCheckCircle className="text-black mt-1 text-xl flex-shrink-0" />
-              <span>
-                Become franchise partners within their pincode areas
-              </span>
-            </li>
-          </ul>
+          </div>
+
         </div>
+
       </div>
+
     </section>
   );
 };
