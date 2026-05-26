@@ -103,8 +103,9 @@ export default function ContactSection() {
             <p className="
             text-yellow-500
             tracking-[4px]
+            mt-10
             mb-4
-            text-sm
+            text-md
             "
             >
               CONTACT US
