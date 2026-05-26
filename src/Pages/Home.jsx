@@ -27,7 +27,7 @@ const Home = () => {
       <Refferal/>
       <Play/>
       <ShopEarn/>
-      <Brand/>
+      {/* <Brand/> */}
       <Post/>
       <Gold/>
       <Profile/>

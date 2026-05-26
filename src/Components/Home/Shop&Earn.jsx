@@ -1,109 +1,114 @@
 import React from "react";
+import {
+  FaGem,
+  FaCoins,
+  FaStore,
+  FaEye,
+} from "react-icons/fa";
 
 const ShopAndEarnSection = () => {
   return (
     <section className="bg-white py-16 md:py-24 px-6 md:px-24 font-sans">
 
-      <div className="flex flex-col lg:flex-row items-start lg:items-center gap-12">
+      <div className="max-w-7xl mx-auto">
 
-        {/* LEFT SIDE CARD */}
-        <div className="lg:w-1/2 flex justify-center">
+        {/* Heading */}
+        <div className="text-center mb-14">
 
-          <div className="relative w-[280px] sm:w-[320px] h-[360px] rounded-[30px] bg-gradient-to-b from-yellow-100 via-yellow-200 to-yellow-500 shadow-2xl overflow-hidden">
+          <h2 className="text-3xl md:text-5xl font-bold text-black">
+            Pixla Jewellery
+          </h2>
 
-            {/* Blur Effects */}
-            <div className="absolute top-8 left-8 w-20 h-20 bg-white/40 rounded-full blur-2xl"></div>
+          <p className="text-yellow-500 text-base md:text-xl font-semibold mt-4">
+            Explore, Preview & Redeem with Confidence
+          </p>
 
-            <div className="absolute bottom-8 right-8 w-24 h-24 bg-yellow-300 rounded-full blur-3xl"></div>
+        </div>
 
-            {/* Main Card */}
-            <div className="absolute inset-0 flex items-center justify-center">
+        {/* Main Layout */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
 
-              <div className="bg-white/90 backdrop-blur-lg rounded-3xl p-6 shadow-xl text-center w-[220px]">
+          {/* Left Features */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
 
-                <div className="text-5xl mb-4">
-                  💎
-                </div>
+            <div className="bg-yellow-50 rounded-3xl p-6 shadow-md">
 
-                <h3 className="text-xl font-bold mb-2">
-                  Pixla Jewellery
-                </h3>
+              <FaEye className="text-yellow-500 text-3xl mb-4" />
 
-                <p className="text-sm text-gray-600 leading-6">
-                  Preview jewellery,
-                  earn rewards and
-                  redeem Gold Dots.
-                </p>
-
-              </div>
-
-            </div>
-
-            {/* Top Card */}
-            <div className="absolute top-5 right-3 bg-white px-4 py-3 rounded-2xl shadow-lg">
-
-              <h4 className="font-semibold text-yellow-600 text-sm">
+              <h3 className="text-lg font-bold mb-2">
                 AR Preview
-              </h4>
+              </h3>
 
-              <p className="text-xs text-gray-500">
-                Try Before Buy
+              <p className="text-gray-600 text-sm leading-6">
+                Preview jewellery using AR before making decisions.
               </p>
 
             </div>
 
-            {/* Bottom Card */}
-            <div className="absolute bottom-6 left-3 bg-white px-4 py-3 rounded-2xl shadow-lg">
+            <div className="bg-white border rounded-3xl p-6 shadow-md">
 
-              <h4 className="font-semibold text-green-600 text-sm">
+              <FaCoins className="text-green-500 text-3xl mb-4" />
+
+              <h3 className="text-lg font-bold mb-2">
                 Gold Dots
-              </h4>
+              </h3>
 
-              <p className="text-xs text-gray-500">
-                Rewards
+              <p className="text-gray-600 text-sm leading-6">
+                Earn rewards through engagement and activities.
+              </p>
+
+            </div>
+
+            <div className="bg-white border rounded-3xl p-6 shadow-md">
+
+              <FaGem className="text-yellow-500 text-3xl mb-4" />
+
+              <h3 className="text-lg font-bold mb-2">
+                Jewellery Collection
+              </h3>
+
+              <p className="text-gray-600 text-sm leading-6">
+                Explore digital jewellery and premium designs.
+              </p>
+
+            </div>
+
+            <div className="bg-yellow-50 rounded-3xl p-6 shadow-md">
+
+              <FaStore className="text-blue-500 text-3xl mb-4" />
+
+              <h3 className="text-lg font-bold mb-2">
+                Redeem Network
+              </h3>
+
+              <p className="text-gray-600 text-sm leading-6">
+                Redeem Gold Dots at partner stores and branches.
               </p>
 
             </div>
 
           </div>
 
-        </div>
+          {/* Right Content */}
+          <div>
 
-        {/* RIGHT SIDE CONTENT */}
-        <div className="lg:w-1/2">
+            <p className="text-gray-700 text-sm sm:text-base md:text-lg leading-8">
 
-          <h2 className="text-3xl md:text-5xl font-bold text-black leading-tight">
-            Pixla Jewellery
-          </h2>
+              Explore and preview jewellery designs using advanced AR technology before making purchase or redemption decisions through the Pixla Gold ecosystem.
 
-          <p className="text-yellow-500 text-base md:text-xl font-semibold mt-3 mb-8">
-            Explore, Preview & Redeem with Confidence
-          </p>
+              <br />
+              <br />
 
-          <p className="text-gray-700 text-sm sm:text-base md:text-lg leading-8">
+              Creators can earn Gold Dots through views, likes, comments, shares, engagement, and community growth, while users can buy Gold Dots directly within the platform.
 
-            Explore and preview jewellery designs
-            using advanced AR technology before
-            making purchase or redemption decisions
-            through the Pixla Gold ecosystem.
+              <br />
+              <br />
 
-            <br />
-            <br />
+              Gold Dots can be redeemed through trusted partner jewellery stores and Pixla Gold Network branches.
 
-            Creators can earn Gold Dots through
-            views, likes, comments, shares,
-            engagement, and community growth,
-            while users can buy Gold Dots directly
-            within the platform.
+            </p>
 
-            <br />
-            <br />
-
-            Gold Dots can be redeemed through
-            trusted partner jewellery stores and
-            Pixla Gold Network branches.
-
-          </p>
+          </div>
 
         </div>
 
